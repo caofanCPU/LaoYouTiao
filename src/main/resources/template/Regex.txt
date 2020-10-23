@@ -1,0 +1,73 @@
+0.About details, please refer https://github.com/caofanCPU/JavaVerbalExpressions
+Usage, static pattern can improve performance in regex searching:
+    public static final Pattern XXX_REGEX = Pattern.compile("...Regex string...");
+
+1.Whitespace Regex
+((?:\s)+)
+
+2.One or more newlines Regex
+(?:\\n|(?:\\r\\n))+
+
+3.Phone validate Regex
+^1[0-9]{10}$
+
+4.Email validate Regex
+^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$
+
+5.Password validate, rules: digital, uppercase, lowercase, special character >= 3 species
+^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\\W_]+$)(?![a-z0-9]+$)(?![a-z\\W_]+$)(?![0-9\\W_]+$)[a-zA-Z0-9\\W_]{8,30}$
+
+6.Keyword detect Regex, for example, position[may be have space]=[may be have space][may be have digital]
+(?:position)(?:\\s)*(?:\\=)(?:\\s)*(?:\\d)*
+
+7.No '_' and begin with [A-Z] in word Regex
+^(?!_)(?:[A-Z])[a-zA-Z0-9\\W]+$
+
+8.No upper case in word Regex
+^(?![A-Z])[a-z0-9\\W_]+$
+
+9.No lower case in word Regex
+^(?![a-z])[A-Z0-9\\W_]+$
+
+10.'www' Url detect Regex
+^(?:http)(?:s)?(?:\:\/\/)(?:www\.)?(?:[^\ ]*)$
+
+11.IDEA Skills
+- 11.1 For multi-lines, how to add some same fix characters?
+ ResearchRegex@   (?:\n|(?:\r\n))+
+ ReplaceString@   ,\r\n
+
+- 11.2 For multi-lines, especially for SQL batch replacing, such as:
+    - zcy_cf,  --> WE'RE(zcy_cf) AS zcy_cf,
+    - cf_zcy   --> WE'RE(cf_zcy) AS cf_zcy
+    - note: WE'RE is just a function
+ I.Clear the character ','
+  ResearchRegex@   (?:,)+
+  ReplaceString@   [EMPTY]
+ II.Batch replace
+  ResearchRegex@   ((?:\w+)+)
+  ReplaceString@   WE'RE($0) AS $0,
+ III.Clear the rare character ',' at the last line
+
+- 11.3 For multi-lines, especially for SQL batch reduce-replacing, such as:
+    - WE'RE(zcy_cf) AS zcy_cf,  --> zcy_cf,
+    - WE'RE(cf_zcy) AS cf_zcy   --> cf_zcy
+    - note: WE'RE is just a function
+ I.Handle prefix
+  ResearchRegex@   (?:WE'RE\()+
+  ReplaceString@   [EMPTY]
+ II.Handle suffix
+  ResearchRegex@   (?:\))(?:[^\,]*)
+  ReplaceString@   [EMPTY]
+ III.Watch out whether need to clear the rare character ',' at the last line
+
+12. Cron Expression
+每隔5秒执行一次:                  */5 * * * * ?
+每隔5分钟执行一次:                0 */5 * * * ?
+每天23点执行一次:                 0 0 23 * * ?
+每天凌晨2点执行一次:               0 0 2 * * ?
+每月2号凌晨4点执行一次：            0 0 2 4 * ?
+每月最后一天23点执行一次：          0 0 23 L * ?
+每周星期天凌晨2点实行一次：          0 0 2 ? * L
+在26分、29分、33分执行一次：        0 26,29,33 * * * ?
+每天的0点、22点、23点都执行一次：    0 0 0 0,22,23 * * ?
