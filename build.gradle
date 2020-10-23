@@ -3,8 +3,8 @@ plugins {
     id 'org.jetbrains.intellij' version '0.4.15'
 }
 
-group 'com.xyz.caofancpu'
-version '1.0.RELEASE'
+group 'com.bitfly.platform.laoyoutiao'
+version '1.0'
 
 sourceCompatibility = 1.8
 
