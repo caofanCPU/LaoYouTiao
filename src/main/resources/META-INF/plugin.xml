@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.xyz.caofancpu.LaoYouTiao</id>
+    <id>com.bitfly.platform.laoyoutiao</id>
     <name>LaoYouTiao</name>
     <vendor email="xyb5to0ZCY@gmail.com" url="http://www.debuggerpowerzcy.top/about/">D8GER</vendor>
 
@@ -11,13 +11,13 @@
         JSON美化|MySQL美化, 字符串批处理, Linux命令工具, 正则表达式奇淫巧技. <br>
         使用IntelliJ IDEA的Java同学可参考使用D8gerAutoCode插件, 其他伙伴参照下述指南, 忽略Java部分即可. <br>
         <ul>
-            <li><a href="https://github.com/caofanCPU/D8gerAutoCode">项目|Project</a><br></li>
+            <li><a href="https://github.com/caofanCPU/LaoYouTiao">项目|Project</a><br></li>
             <li><a href="http://www.debuggerpowerzcy.top/home/2020/03/14/D8gerAutoCode%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">博客指南|Blog guide</a><br></li>
             <li><a href="http://file.debuggerpowerzcy.top/power/DYOU.mp4">视频教程</a>||||||
                 <a href="https://www.youtube.com/watch?v=LZfC2_u-8aE">Video Manual</a><br>
             </li>
-            <li><a href="https://github.com/caofanCPU/D8gerAutoCode/blob/master/README_CN.md">新手教程</a>||||||
-                <a href="https://github.com/caofanCPU/D8gerAutoCode/blob/master/README.md">Tutorial</a><br>
+            <li><a href="https://github.com/caofanCPU/LaoYouTiao/blob/master/README_CN.md">新手教程</a>||||||
+                <a href="https://github.com/caofanCPU/LaoYouTiao/blob/master/README.md">Tutorial</a><br>
             </li>
         </ul>
         </p>
@@ -43,23 +43,23 @@
 
             <!-- Add your actions here -->
 
-            <action id="BeautifulJSONAction" class="com.xyz.caofancpu.d8ger.action.BeautifulJSONAction" text="BeautifulJSON" description="BeautifulJSON" icon="/icons/JetBeFaker.png">
+            <action id="BeautifulJSONAction" class="com.bitfly.platform.laoyoutiao.action.BeautifulJSONAction" text="BeautifulJSON" description="BeautifulJSON" icon="/icons/JetBeFaker.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl J"/>
             </action>
 
-            <action id="SimplifyOneLineAction" class="com.xyz.caofancpu.d8ger.action.SimplifyOneLineAction" text="SimplifyOneLine" description="SimplifyOneLine" icon="/icons/Simplify.png">
+            <action id="SimplifyOneLineAction" class="com.bitfly.platform.laoyoutiao.action.SimplifyOneLineAction" text="SimplifyOneLine" description="SimplifyOneLine" icon="/icons/Simplify.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl S"/>
             </action>
 
-            <action id="CamelUnderlineConvertAction" class="com.xyz.caofancpu.d8ger.action.CamelUnderlineConvertAction" text="CamelUnderlineConvert" description="CamelUnderlineConvert" icon="/icons/UTime.png">
+            <action id="CamelUnderlineConvertAction" class="com.bitfly.platform.laoyoutiao.action.CamelUnderlineConvertAction" text="CamelUnderlineConvert" description="CamelUnderlineConvert" icon="/icons/UTime.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl U"/>
             </action>
 
-            <action id="BeautifulMySQL" class="com.xyz.caofancpu.d8ger.action.BeautifulMySQLAction" text="BeautifulMySQL" description="BeautifulMySQL" icon="/icons/Beautiful.png">
+            <action id="BeautifulMySQL" class="com.bitfly.platform.laoyoutiao.action.BeautifulMySQLAction" text="BeautifulMySQL" description="BeautifulMySQL" icon="/icons/Beautiful.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl B"/>
             </action>
 
-            <action id="D8gerMore" class="com.xyz.caofancpu.d8ger.action.D8gerNoteAction" text="D8gerNote" description="D8gerNote" icon="/icons/gitHub-cool.png">
+            <action id="D8gerMore" class="com.bitfly.platform.laoyoutiao.action.D8gerNoteAction" text="D8gerNote" description="D8gerNote" icon="/icons/gitHub-cool.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl N"/>
             </action>
         </group>
@@ -71,7 +71,7 @@
 
     <change-notes>
         <![CDATA[
-        <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/D8gerAutoCode">插件地址</a>, 感谢老铁!</li>
+        <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!</li>
         <li><h1>1.0.RELEASE</h1></li>
         <ul>
         <li>自从'今日油条'被'今日头条'起诉侵权后, 本人夙兴夜寐, 久不得眠.<br> </li>

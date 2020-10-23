@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.xyz.caofancpu.d8ger.util;
+package com.bitfly.platform.laoyoutiao.util;
 
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;

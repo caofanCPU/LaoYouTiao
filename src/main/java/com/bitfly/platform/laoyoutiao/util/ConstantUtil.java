@@ -1,4 +1,4 @@
-package com.xyz.caofancpu.d8ger.util;
+package com.bitfly.platform.laoyoutiao.util;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;

@@ -1,5 +1,7 @@
-package com.xyz.caofancpu.d8ger.action;
+package com.bitfly.platform.laoyoutiao.action;
 
+import com.bitfly.platform.laoyoutiao.util.DateUtil;
+import com.bitfly.platform.laoyoutiao.util.VerbalExpressionUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -9,8 +11,6 @@ import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.TextRange;
-import com.xyz.caofancpu.d8ger.util.DateUtil;
-import com.xyz.caofancpu.d8ger.util.VerbalExpressionUtil;
 import lombok.NonNull;
 import org.apache.commons.lang3.StringUtils;
 

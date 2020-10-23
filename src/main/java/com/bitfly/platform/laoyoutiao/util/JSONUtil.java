@@ -1,4 +1,4 @@
-package com.xyz.caofancpu.d8ger.util;
+package com.bitfly.platform.laoyoutiao.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

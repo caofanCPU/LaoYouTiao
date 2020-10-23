@@ -1,6 +1,6 @@
 package d8ger;
 
-import com.xyz.caofancpu.d8ger.util.DateUtil;
+import com.bitfly.platform.laoyoutiao.util.DateUtil;
 import org.junit.Test;
 
 /**

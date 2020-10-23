@@ -1,5 +1,6 @@
-package com.xyz.caofancpu.d8ger.action;
+package com.bitfly.platform.laoyoutiao.action;
 
+import com.bitfly.platform.laoyoutiao.util.JSONUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -8,16 +9,15 @@ import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
-import com.xyz.caofancpu.d8ger.util.StringAlignUtil;
 import lombok.NonNull;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * Beautiful MySQL
+ * Beautify JSON
  *
  * @author caofanCPU
  */
-public class BeautifulMySQLAction extends AnAction {
+public class BeautifulJSONAction extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
@@ -26,23 +26,23 @@ public class BeautifulMySQLAction extends AnAction {
         final Document currentDocument = currentEditor.getDocument();
         final SelectionModel selectionModel = currentEditor.getSelectionModel();
 
-        // Perform a refresh of the selected words
-        WriteCommandAction.runWriteCommandAction(currentProject, () -> executeCamelUnderlineConvert(currentDocument, selectionModel));
+        // Perform a refresh of the current file
+        WriteCommandAction.runWriteCommandAction(currentProject, () -> executeBeautyJSONRender(currentDocument, selectionModel));
     }
 
     /**
-     * Rewrite files for removing whitespace and reducing to one line
+     * Rewrite files for beautifying JSON string
      *
      * @param currentDocument
      * @param selectionModel
      */
-    private void executeCamelUnderlineConvert(@NonNull Document currentDocument, @NonNull SelectionModel selectionModel) {
-        String originSql = selectionModel.getSelectedText();
-        if (StringUtils.isNotBlank(originSql)) {
-            String replacement = StringAlignUtil.formatMySQL(originSql);
+    private void executeBeautyJSONRender(@NonNull Document currentDocument, @NonNull SelectionModel selectionModel) {
+        String sectionText = selectionModel.getSelectedText();
+        if (StringUtils.isNotBlank(sectionText)) {
+            String replacement = JSONUtil.formatStandardJSON(sectionText);
             currentDocument.replaceString(selectionModel.getSelectionStart(), selectionModel.getSelectionEnd(), replacement);
         } else {
-            currentDocument.setText(StringAlignUtil.formatMySQL(currentDocument.getText()));
+            currentDocument.setText(JSONUtil.formatStandardJSON(currentDocument.getText()));
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.xyz.caofancpu.d8ger.core;
+package com.bitfly.platform.laoyoutiao.core;
 
 /**
  * Code template string constants

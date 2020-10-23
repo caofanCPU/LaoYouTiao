@@ -1,5 +1,10 @@
-package com.xyz.caofancpu.d8ger.action;
+package com.bitfly.platform.laoyoutiao.action;
 
+import com.bitfly.platform.laoyoutiao.core.EasterEggCodeTemplateEnum;
+import com.bitfly.platform.laoyoutiao.util.CollectionUtil;
+import com.bitfly.platform.laoyoutiao.util.ConstantUtil;
+import com.bitfly.platform.laoyoutiao.util.StringAlignUtil;
+import com.bitfly.platform.laoyoutiao.util.VerbalExpressionUtil;
 import com.intellij.ide.browsers.BrowserLauncher;
 import com.intellij.ide.browsers.WebBrowserManager;
 import com.intellij.openapi.actionSystem.AnAction;
@@ -9,11 +14,6 @@ import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
-import com.xyz.caofancpu.d8ger.core.EasterEggCodeTemplateEnum;
-import com.xyz.caofancpu.d8ger.util.CollectionUtil;
-import com.xyz.caofancpu.d8ger.util.ConstantUtil;
-import com.xyz.caofancpu.d8ger.util.StringAlignUtil;
-import com.xyz.caofancpu.d8ger.util.VerbalExpressionUtil;
 import lombok.NonNull;
 import org.apache.commons.lang3.StringUtils;
 

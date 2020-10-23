@@ -1,4 +1,4 @@
-package com.xyz.caofancpu.d8ger.util;
+package com.bitfly.platform.laoyoutiao.util;
 
 import com.alibaba.druid.sql.SQLUtils;
 import com.alibaba.druid.sql.ast.SQLStatement;

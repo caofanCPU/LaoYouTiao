@@ -1,4 +1,4 @@
-package com.xyz.caofancpu.d8ger.core;
+package com.bitfly.platform.laoyoutiao.core;
 
 /**
  * EasterEgg code template keyword enumeration
