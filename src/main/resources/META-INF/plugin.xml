@@ -21,7 +21,7 @@
             </li>
         </ul>
         </p>
-        <img src="http://file.debuggerpowerzcy.top/power/CaughtUp.jpg" /><br>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603742916681&di=bd4d7ebece8745cebfdc1cd762761ee4&imgtype=0&src=http%3A%2F%2Fwww.7mgame.com%2Fdata%2Fattachment%2Fportal%2F201904%2F03%2F113313a7ygrrymor3drrd6.jpg" /><br>
         ]]>
     </description>
 
@@ -71,8 +71,19 @@
 
     <change-notes>
         <![CDATA[
+        <li>If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!</li>
+        <li><h1>1.1</h1></li>
+        <ul>
+        <li>Add: Camel-Underline-Uppercase-Uncapitalize-Lowercase can be converted to each other by shortcut `alt` + `shift` + `cmd` + `U`, even timestamp-datetime convert <br> </li>
+        <li>Add: JSON formatting and single line text conversion, supporting section and whole document, default shortcut `alt`+`shift`+`cmd`+`J` | `S` <br> </li>
+        <li>Add: MySQL formatting, supporting section and whole document, default shortcut `alt`+`shift`+`cmd`+`J` | `B` <br> </li>
+        <li>Add: Reserve easter eggs, edit the blank file in IDEA and enter `nasa` to get the NASA configuration file template. This is very useful and efficient for handling multi-lines, especially SQL field naming processing <br> </li>
+        <li>Add: Reserve easter eggs, edit the blank file in IDEA and enter `regex` to get some commonly used regular expressions. Other code Easter eggs will be added later <br> </li>
+        <li>Add: Reserve easter eggs, you can try to edit the blank file in IDEA and type `ohmyzsh` to get some useful shell commands and functions <br> </li>
+        </ul>
+        - For ZN
         <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!</li>
-        <li><h1>1.0.RELEASE</h1></li>
+        <li><h1>1.1</h1></li>
         <ul>
         <li>自从'今日油条'被'今日头条'起诉侵权后, 本人夙兴夜寐, 久不得眠.<br> </li>
         <li>连隔壁王家的撕葱都要一口吞的好油条, 怎么就被干趴了呢?<br> </li>
