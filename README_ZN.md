@@ -86,18 +86,7 @@
 - 源码安装, 这需要你熟悉Gradle, 后期我会详细补充如何使用Gradle开发一个插件  
 
 ### Bug&问题
-- 已知问题(最新版本3.0中已修复)
-> 插件图标显示异常, 图标内只出现相交的红叉
-<div align="center">
-    <img src="http://file.debuggerpowerzcy.top/power/W-D8ger.png" /> 
-</div>
-
-```
-1.这是Intelij IDEA新版本特性遗留的兼容性小BUG
-2.升级Intelij IDEA版本, 至少为2019.3.*(2019.2.*及以下都会显示异常)
-```
-
-[其他问题, 欢迎前来查房](https://github.com/caofanCPU/D8gerAutoCode/issues)
+[暂无, 等你来提](https://github.com/caofanCPU/D8gerAutoCode/issues)
 
 ### 版本演进历史
 觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!

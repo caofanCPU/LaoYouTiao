@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.bitfly.platform.laoyoutiao'
-version '1.1'
+version '1.2'
 
 sourceCompatibility = 1.8
 
@@ -52,6 +52,6 @@ intellij {
 patchPluginXml {
     changeNotes 
     """
-    The old fried dough sticks every day, compared with today's fried dough sticks, don’t they smell good?<br>
+    每天老油条, 和今日油条相比, 不香吗?<br>
     """
 }

@@ -85,19 +85,7 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
 - As for `Source installation` requires you're familiar with Gradle, I will add more details about how to develop a plugin by ***Gradle*** later
 
 ### Bug & Question
-- Known issues
-> The icon of plugin shows error like this: red square with a cross
-<div align="center">
-    <img src="http://file.debuggerpowerzcy.top/power/W-D8ger.png" /> 
-</div>
-
-```
-Solution
-1.This issue is caused by Intellij IDEA of new version feature.
-2.Try to upgrade the version of Intellij util 2019.3.*(greater than 2019.2.*), you'll fix it.
-```
-
-[Other issues, please come to join room](https://github.com/caofanCPU/D8gerAutoCode/issues)
+[No one util now, but wait for you](https://github.com/caofanCPU/D8gerAutoCode/issues)
 
 ### VersionRoadHistory
 If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!

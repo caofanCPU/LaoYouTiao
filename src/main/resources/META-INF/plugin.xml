@@ -36,7 +36,7 @@
         <!-- refer https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=991968
                 download 16.png as icon, 32.svg as plugin logo-->
         <!-- Add your customer group here -->
-        <group id="D8ger" text="D8ger" description="D8gerAutoCode" popup="true" icon="/icons/D8Main.png">
+        <group id="ByteCry" text="ByteCry" description="ByteCry-LaoYouTiao" popup="true" icon="/icons/ByteCry.png">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
             <separator/>
 
@@ -58,7 +58,7 @@
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl B"/>
             </action>
 
-            <action id="D8gerMore" class="com.bitfly.platform.laoyoutiao.action.D8gerNoteAction" text="D8gerNote" description="D8gerNote" icon="/icons/gitHub-cool.png">
+            <action id="ByteDance" class="com.bitfly.platform.laoyoutiao.action.D8gerNoteAction" text="ByteDance" description="ByteDance" icon="/icons/gitHub-cool.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl N"/>
             </action>
         </group>
@@ -80,7 +80,7 @@
         <li>Add: Reserve easter eggs, edit the blank file in IDEA and enter `regex` to get some commonly used regular expressions. Other code Easter eggs will be added later <br> </li>
         <li>Add: Reserve easter eggs, you can try to edit the blank file in IDEA and type `ohmyzsh` to get some useful shell commands and functions <br> </li>
         </ul>
-        - For ZN
+        <li>中文</li>
         <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!</li>
         <li><h1>1.1</h1></li>
         <ul>
