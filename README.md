@@ -17,7 +17,7 @@
 > [中文说明](./README_CN.md)
 
 ## Attention
-The latest version is **1.1** which is submitted on 26th, October under approving.  
+The latest version is **1.1** which is approved on 26th, October.  
 If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/1.1) to download ~~.zip~~ file.  
 By the way, I hope you use happy and give me a 🌟, thx!
 
