@@ -11,7 +11,7 @@
 
 ## IDEA Code Plugin • `For Common Version`  
 <div align="center">
-    <img src="http://file.debuggerpowerzcy.top/power/LaoYouTiao-V1.png" /> 
+    <img src="http://file.debuggerpowerzcy.top/power/LaoYouTiao-V2.png" /> 
 </div>
 
 > [中文说明](./README_CN.md)
