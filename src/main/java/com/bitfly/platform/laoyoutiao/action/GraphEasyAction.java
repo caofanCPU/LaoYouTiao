@@ -34,11 +34,12 @@ public class GraphEasyAction extends AnAction {
      * @param source
      * @return
      */
-    private static String convertGraphEasyDSL(String source) {
+    public static String convertGraphEasyDSL(String source) {
         String[] split = source.split(VerbalExpressionUtil.NEXT_LINE_REGEX.pattern());
         List<String> resultList = new ArrayList<>();
         for (String defineText : split) {
-            String initGraphEasy = defineText.replaceAll(VerbalExpressionUtil.KEY_COLLECTION_EDGE_SYMBOL_REGEX.pattern(), ConstantUtil.DOUBLE_ESCAPES + VerbalExpressionUtil.REPLACE_MATCH_RESULT_SYMBOL);
+            String initGraphEasy = defineText.replaceAll(VerbalExpressionUtil.CODE_NOTE_REGEX.pattern(), ConstantUtil.EMPTY)
+                    .replaceAll(VerbalExpressionUtil.KEY_COLLECTION_EDGE_SYMBOL_REGEX.pattern(), ConstantUtil.DOUBLE_ESCAPES + VerbalExpressionUtil.REPLACE_MATCH_RESULT_SYMBOL);
             String[] elements = initGraphEasy.split(VerbalExpressionUtil.KEY_ENGLISH_DOT_REGEX.pattern());
             StringBuilder itemResult = new StringBuilder(ConstantUtil.EMPTY);
             for (int i = 0; i < elements.length; i++) {

@@ -42,7 +42,7 @@
 
             <!-- Add your actions here -->
 
-            <action id="D8GER-BeautifulJSON" class="com.bitfly.platform.laoyoutiao.action.BeautifulJSONAction" text="BeautifulJSON" description="BeautifulJSON" icon="/icons/JetBeFaker.png">
+            <action id="D8GER-BeautifulJSON" class="com.bitfly.platform.laoyoutiao.action.BeautifulJSONAction" text="Beautiful::JSON" description="Beautiful::JSON" icon="/icons/JetBeFaker.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl J"/>
             </action>
 
@@ -50,19 +50,19 @@
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl T"/>
             </action>
 
-            <action id="D8GER-CamelUnderlineConvert" class="com.bitfly.platform.laoyoutiao.action.CamelUnderlineConvertAction" text="CamelUnderlineConvert" description="CamelUnderlineConvert" icon="/icons/UTime.png">
+            <action id="D8GER-CamelUnderlineConvert" class="com.bitfly.platform.laoyoutiao.action.CamelUnderlineConvertAction" text="Camel::Underline" description="Camel::Underline" icon="/icons/UTime.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl U"/>
             </action>
 
-            <action id="D8GER-SimplifyOneLine" class="com.bitfly.platform.laoyoutiao.action.SimplifyOneLineAction" text="SimplifyOneLine" description="SimplifyOneLine" icon="/icons/Simplify.png">
+            <action id="D8GER-SimplifyOneLine" class="com.bitfly.platform.laoyoutiao.action.SimplifyOneLineAction" text="Simplify::OneLine" description="Simplify::OneLine" icon="/icons/Simplify.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl S"/>
             </action>
 
-            <action id="D8GER-BeautifulMySQL" class="com.bitfly.platform.laoyoutiao.action.BeautifulMySQLAction" text="BeautifulMySQL" description="BeautifulMySQL" icon="/icons/Beautiful.png">
+            <action id="D8GER-BeautifulMySQL" class="com.bitfly.platform.laoyoutiao.action.BeautifulMySQLAction" text="Beautiful::MySQL" description="Beautiful::MySQL" icon="/icons/Beautiful.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl B"/>
             </action>
 
-            <action id="D8GER-ByteNoDance" class="com.bitfly.platform.laoyoutiao.action.ByteNoDanceAction" text="ByteNoDance" description="ByteNoDance" icon="/icons/gitHub-cool.png">
+            <action id="D8GER-ByteNoDance" class="com.bitfly.platform.laoyoutiao.action.ByteNoDanceAction" text="Byte::NoDance" description="Byte::NoDance" icon="/icons/gitHub-cool.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl N"/>
             </action>
         </group>
@@ -78,7 +78,16 @@
         <li><h1>1.2</h1></li>
         <ul>
         <li>Add: Support <a href="http://debuggerpowerzcy.top/home/2020/04/25/MacOS%E8%BD%AF%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/">Graph::Easy</a> for easier DSL, default shortcut is `alt` + `shift` + `cmd` + `T` <br> </li>
-        <li>Adjust tool menus<br> </li>
+        <li>Adjust tool menus<br> <ul>
+        <li>D8ger renamed to ByteCry</li>
+        <li>BeautifulJSON renamed to Beautiful::JSON</li>
+        <li>Add new tool item named Graph::Easy</li>
+        <li>CamelUnderlineConvert renamed to Camel::Underline</li>
+        <li>SimplifyOneLine renamed to Simplify::OneLine</li>
+        <li>BeautifulMySQL renamed to Beautiful::MySQL</li>
+        <li>D8gerNote renamed to Byte::NoDance</li>
+        </ul>
+        </li>
         </ul>
         <li><h1>1.1</h1></li>
         <ul>
@@ -94,7 +103,17 @@
         <li><h1>1.2</h1></li>
         <ul>
         <li>新增<a href="http://debuggerpowerzcy.top/home/2020/04/25/MacOS%E8%BD%AF%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/">Graph::Easy</a>语法简化支持, 默认快捷键`alt` + `shift` + `cmd` + `T`.<br> </li>
-        <li>菜单工具栏调整<br> </li>
+        <li>菜单工具栏调整<br>
+        <ul>
+        <li>D8ger重命名为ByteCry</li>
+        <li>BeautifulJSON重命名为Beautiful::JSON</li>
+        <li>新增Graph::Easy</li>
+        <li>CamelUnderlineConvert重命名为Camel::Underline</li>
+        <li>SimplifyOneLine重命名为Simplify::OneLine</li>
+        <li>BeautifulMySQL重命名为Beautiful::MySQL</li>
+        <li>D8gerNote重命名为Byte::NoDance</li>
+        </ul>
+        </li>
         </ul>
         <li><h1>1.1</h1></li>
         <ul>

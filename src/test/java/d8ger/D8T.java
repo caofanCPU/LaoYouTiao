@@ -1,6 +1,6 @@
 package d8ger;
 
-import com.bitfly.platform.laoyoutiao.util.DateUtil;
+import com.bitfly.platform.laoyoutiao.action.GraphEasyAction;
 import org.junit.Test;
 
 /**
@@ -12,7 +12,7 @@ public class D8T {
 
     @Test
     public void hello() {
-        System.out.println(DateUtil.enhanceParseMilliSeconds("2020-02-02T13:14:00"));
+        String text = "     * coll.包含.T.转换为.F.再匹配条件predicate.找到就返回\n     * F.找不到返回.null";
+        System.out.println(GraphEasyAction.convertGraphEasyDSL(text));
     }
-
 }
