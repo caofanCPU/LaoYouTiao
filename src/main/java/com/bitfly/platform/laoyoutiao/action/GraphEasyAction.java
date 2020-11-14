@@ -53,7 +53,7 @@ public class GraphEasyAction extends AnAction {
             }
             resultList.add(itemResult.toString());
         }
-        return CollectionUtil.join(resultList, ConstantUtil.NEXT_LINE);
+        return CollectionUtil.join(resultList, ConstantUtil.TAB);
     }
 
     @Override
