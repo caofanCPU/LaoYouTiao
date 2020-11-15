@@ -17,9 +17,11 @@
 > [中文说明](./README_CN.md)
 
 ## Attention
-The latest version is **1.1** which is approved on 26th, October.  
+The latest version is **2.0** which is approving on 15th, November.   
 If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/1.1) to download ~~.zip~~ file.  
-By the way, I hope you use happy and give me a 🌟, thx!
+By the way, I hope you use happy and give me a 🌟, thx!  
+NEXT Developing plan is [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).  
+
 
 ### Preface
 As JetBrains' said, I believe that you should be good use of tools will save you precious hours on your busing work.

@@ -16,9 +16,11 @@
 </div>
 
 ## 说明
-最新版本为**1.1**, 在 _**`10月26号`**_ 已通过官方审核发布  
+最新版本为**1.1**, 在 _**`11月15号`**_ 已提交待官方审核  
 如果无法获取, [戳此](https://github.com/caofanCPU/LaoYouTiao/releases/tag/1.1) 下载~~.zip~~压缩包  
-如果用的不错, 给我点个🌟呗, thx!
+如果用的不错, 给我点个🌟呗, thx!  
+下个开发版本将遵循[DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8). 
+
 
 ### 序言
 正如JetBrains所说, 我相信你在繁忙编码工作中时应该善用工具以节省宝贵的时间。
