@@ -17,7 +17,7 @@ public class JSONUtil {
     public static String formatStandardJSON(@NonNull String source) {
         String result = source;
         try {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            Gson gson = new GsonBuilder().serializeNulls().serializeSpecialFloatingPointValues().setPrettyPrinting().create();
             JsonElement element = JsonParser.parseString(source);
             result = gson.toJson(element);
         } catch (JsonSyntaxException e) {
