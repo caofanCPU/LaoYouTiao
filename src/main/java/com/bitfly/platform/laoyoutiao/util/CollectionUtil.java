@@ -753,10 +753,19 @@ public class CollectionUtil extends CollectionUtils {
     /**
      * Map key-value pair inversion, support return a custom collection container,
      * for example, return LinkedHashMap<K, LinkedList<V>
-     * <p>
-     * Map<k1, Coll_1<v1>>  ==>  Map<k2, Coll_1<v2>>
-     * kFunction.apply(k1) ==> v2
-     * vFunction.apply(v1) ==> k2
+     * .
+     * . +---------------------+  convert to   +---------------------+
+     * . | Map<k1, Coll_1<v1>> | ------------> | Map<k2, Coll_1<v2>> |
+     * . +---------------------+               +---------------------+
+     * .
+     * . +-----------+  then get   +----+
+     * . | kFunction | ----------> | v2 |
+     * . +-----------+             +----+
+     * .
+     * . +-----------+  then get   +----+
+     * . | vFunction | ----------> | k2 |
+     * . +-----------+             +----+
+     * .
      *
      * @param mapColl
      * @param vColl

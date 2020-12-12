@@ -3,6 +3,9 @@ package com.bitfly.platform.laoyoutiao.action;
 import com.bitfly.platform.laoyoutiao.util.CollectionUtil;
 import com.bitfly.platform.laoyoutiao.util.ConstantUtil;
 import com.bitfly.platform.laoyoutiao.util.VerbalExpressionUtil;
+import com.intellij.notification.Notification;
+import com.intellij.notification.NotificationType;
+import com.intellij.notification.Notifications;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -12,8 +15,10 @@ import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
 import lombok.NonNull;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +61,48 @@ public class GraphEasyAction extends AnAction {
         return CollectionUtil.join(resultList, ConstantUtil.TAB);
     }
 
+    /**
+     * Execute /usr/local/bin/graph-easy for the final result
+     *
+     * @param graphEasyDsl
+     * @return
+     */
+    public static String graphEasyView(String graphEasyDsl) {
+        String graphEasyHome = "/usr/local/bin/graph-easy";
+        String command = "echo \"" + graphEasyDsl + "\" | " + graphEasyHome;
+        String helpMessage = "If you get nothing changed, here is the checklist: \n"
+                + "1.In your terminal, try: echo \"" + graphEasyDsl + "\" | " + graphEasyHome + "\n"
+                + "2.If you stocked, click <b><a href='https://github.com/caofanCPU/LaoYouTiao'>here</a><b> for help";
+        String commentFlag = ConstantUtil.ENGLISH_STOP + ConstantUtil.SPACE;
+        String replacement = VerbalExpressionUtil.REPLACE_MATCH_RESULT_SYMBOL + ConstantUtil.TAB + ConstantUtil.SPACE + ConstantUtil.COMMENT_STAR + ConstantUtil.SPACE + commentFlag;
+        String shell = "/bin/zsh";
+        String executeFlag = "-c";
+        ProcessBuilder processBuilder = new ProcessBuilder(shell, executeFlag, command);
+        String errorMessage;
+        try {
+            Process process = processBuilder.start();
+            String shellResult = IOUtils.toString(process.getInputStream(), StandardCharsets.UTF_8);
+            if (StringUtils.isNotBlank(shellResult)) {
+                return commentFlag + shellResult.replaceAll(VerbalExpressionUtil.NEXT_LINE_REGEX.pattern(), replacement);
+            }
+            errorMessage = IOUtils.toString(process.getErrorStream(), StandardCharsets.UTF_8);
+        } catch (Throwable e) {
+            // notify
+            errorMessage = e.getMessage();
+        }
+        if (StringUtils.isNotBlank(errorMessage)) {
+            helpMessage += ("\nTHE ERROR IS: " + errorMessage);
+        }
+        Notifications.Bus.notify(
+                new Notification(ConstantUtil.NOTIFICATION_GROUP_VIEW_ID,
+                        "Something went wrong, please check",
+                        helpMessage,
+                        NotificationType.ERROR
+                )
+        );
+        return null;
+    }
+
     @Override
     public void actionPerformed(AnActionEvent e) {
         final Editor currentEditor = e.getRequiredData(CommonDataKeys.EDITOR);
@@ -76,10 +123,17 @@ public class GraphEasyAction extends AnAction {
     private void executeGraphEasyRender(@NonNull Document currentDocument, @NonNull SelectionModel selectionModel) {
         String sectionText = selectionModel.getSelectedText();
         if (StringUtils.isNotBlank(sectionText)) {
-            String replacement = convertGraphEasyDSL(sectionText);
-            currentDocument.replaceString(selectionModel.getSelectionStart(), selectionModel.getSelectionEnd(), replacement);
+            String graphEasyDSL = convertGraphEasyDSL(sectionText);
+            String replacement = graphEasyView(graphEasyDSL);
+            if (StringUtils.isNotBlank(replacement)) {
+                currentDocument.replaceString(selectionModel.getSelectionStart(), selectionModel.getSelectionEnd(), replacement);
+            }
         } else {
-            currentDocument.setText(convertGraphEasyDSL(currentDocument.getText()));
+            String graphEasyDSL = convertGraphEasyDSL(currentDocument.getText());
+            String replacement = graphEasyView(graphEasyDSL);
+            if (StringUtils.isNotBlank(replacement)) {
+                currentDocument.setText(replacement);
+            }
         }
     }
 

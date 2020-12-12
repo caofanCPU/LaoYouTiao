@@ -12,7 +12,7 @@ public class D8T {
 
     @Test
     public void hello() {
-        String text = "     * coll.包含.T.转换为.F.再匹配条件predicate.找到就返回\n     * F.找不到返回.null";
-        System.out.println(GraphEasyAction.convertGraphEasyDSL(text));
+        String text = "coll.包含.T.转换为.F.再匹配条件predicate.找到就返回\nF.找不到返回.null";
+        System.out.println(GraphEasyAction.graphEasyView(text));
     }
 }

@@ -303,4 +303,9 @@ public class ConstantUtil {
      * English mid right bracket
      */
     public static final String ENGLISH_MID_RIGHT_BRACKET = "]";
+
+    /**
+     * Doc comment star
+     */
+    public static final String COMMENT_STAR = "*";
 }
