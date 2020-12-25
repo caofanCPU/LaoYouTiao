@@ -83,7 +83,10 @@ public class GraphEasyAction extends AnAction {
             Process process = processBuilder.start();
             String shellResult = IOUtils.toString(process.getInputStream(), StandardCharsets.UTF_8);
             if (StringUtils.isNotBlank(shellResult)) {
-                return commentFlag + shellResult.replaceAll(VerbalExpressionUtil.NEXT_LINE_REGEX.pattern(), replacement);
+                String splitSymbol = ConstantUtil.TAB + ConstantUtil.SPACE + ConstantUtil.COMMENT_STAR + ConstantUtil.SPACE
+                        + "====" + ConstantUtil.NEXT_LINE
+                        + ConstantUtil.TAB + ConstantUtil.SPACE + ConstantUtil.COMMENT_STAR + ConstantUtil.SPACE;
+                return splitSymbol + commentFlag + shellResult.replaceAll(VerbalExpressionUtil.NEXT_LINE_REGEX.pattern(), replacement);
             }
             errorMessage = IOUtils.toString(process.getErrorStream(), StandardCharsets.UTF_8);
         } catch (Throwable e) {
@@ -126,13 +129,15 @@ public class GraphEasyAction extends AnAction {
             String graphEasyDSL = convertGraphEasyDSL(sectionText);
             String replacement = graphEasyView(graphEasyDSL);
             if (StringUtils.isNotBlank(replacement)) {
-                currentDocument.replaceString(selectionModel.getSelectionStart(), selectionModel.getSelectionEnd(), replacement);
+                String friendlyResult = sectionText + ConstantUtil.NEXT_LINE + replacement;
+                currentDocument.replaceString(selectionModel.getSelectionStart(), selectionModel.getSelectionEnd(), friendlyResult);
             }
         } else {
             String graphEasyDSL = convertGraphEasyDSL(currentDocument.getText());
             String replacement = graphEasyView(graphEasyDSL);
             if (StringUtils.isNotBlank(replacement)) {
-                currentDocument.setText(replacement);
+                String friendlyResult = currentDocument.getText() + ConstantUtil.NEXT_LINE + replacement;
+                currentDocument.setText(friendlyResult);
             }
         }
     }
