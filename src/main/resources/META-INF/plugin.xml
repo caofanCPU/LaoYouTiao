@@ -75,6 +75,16 @@
     <change-notes>
         <![CDATA[
         <li>If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!</li>
+        <li><h1>2.4</h1></li>
+        <ul>
+        <li>Optimize: Graph::Easy will keep the user's original sentence, and then generate graphical text code comments, which is convenient for subsequent adjustments, 'cmd' + 'alt' + 'shift' + 'T'<br>
+        <ul>
+        <li>Basic grammar: '.' is the key symbol of grammar parsing<br></li>
+        <li>For example: A.some text.B  means that node 'A' points node 'B' and the comment upper the arrow is 'some text'<br></li>
+        <li>Talk seems cheap, <a href="http://file.debuggerpowerzcy.top/power/HERE.gif">so show you a gif</a><br></li>
+        </ul>
+        </li>
+        </ul>
         <li><h1>2.3</h1></li>
         <ul>
         <li>Update: Graph::Easy now fully supports one-click generation of graphical text code comments, 'cmd' + 'alt' + 'shift' + 'T'<br>
@@ -120,6 +130,17 @@
         </ul>
         <li>中文</li>
         <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!</li>
+        <li><h1>2.4</h1></li>
+        <ul>
+        <li>优化: Graph::Easy保留用户输入原始语句, 再生成图形化文本代码注释, 方便后续调整, 'cmd' + 'alt' + 'shift' + 'T'<br>
+        <ul>
+        <li>基础语法: '.'为元素关键符号<br></li>
+        <li>示例: A.文本.B  其含义为'A'节点指向'B'节点, 箭头上的注释为'文本'<br></li>
+        <li>注意: 文本强烈建议使用英文, 中文由于编码问题会导致图形无法对齐<br></li>
+        <li>话不多说, <a href="http://file.debuggerpowerzcy.top/power/HERE.gif">上图</a><br></li>
+        </ul>
+        </li>
+        </ul>
         <li><h1>2.3</h1></li>
         <ul>
         <li>新增: Graph::Easy现在全力支持一键生成图形化文本代码注释, 'cmd' + 'alt' + 'shift' + 'T'<br>
