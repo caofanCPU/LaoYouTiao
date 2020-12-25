@@ -1,6 +1,7 @@
 package d8ger;
 
 import com.bitfly.platform.laoyoutiao.action.GraphEasyAction;
+import com.bitfly.platform.laoyoutiao.util.ConstantUtil;
 import org.junit.Test;
 
 /**
@@ -12,7 +13,10 @@ public class D8T {
 
     @Test
     public void hello() {
-        String text = "coll.包含.T.转换为.F.再匹配条件predicate.找到就返回\nF.找不到返回.null";
-        System.out.println(GraphEasyAction.graphEasyView(text));
+        String text = "A.1.B.2.C";
+        String graphEasyDSL = GraphEasyAction.convertGraphEasyDSL(text);
+        String replacement = GraphEasyAction.graphEasyView(graphEasyDSL);
+        String friendlyResult = text + ConstantUtil.NEXT_LINE + replacement;
+        System.out.println(friendlyResult);
     }
 }
