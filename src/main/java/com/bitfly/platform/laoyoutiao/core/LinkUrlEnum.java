@@ -27,7 +27,7 @@ public enum LinkUrlEnum {
     MYSQL_EXPLAIN("mysql_explain", "MySQL执行计划", "https://mp.weixin.qq.com/s/PaHGeKOzW_HePzHjmpHArA"),
     MYSQL_END("mysql_end", "MySQL终极原理图", "https://mp.weixin.qq.com/s/uyu0lKz2_N5BYgITKz71CQ"),
 
-    REDIS_INTERVIEW("redis_end", "Redis高频面试", "https://mp.weixin.qq.com/s/syECAfZai9HvCs02EQcvrw"),
+    REDIS_INTERVIEW("redis_interview", "Redis高频面试", "https://mp.weixin.qq.com/s/syECAfZai9HvCs02EQcvrw"),
     REDIS_BASIC("redis_basic", "Redis基础", "https://mp.weixin.qq.com/s/3giipjKU668jPqta6zAH7Q"),
     REDIS_CLUSTER("redis_cluster", "Redis集群", "https://mp.weixin.qq.com/s/k7Ps-pkwuNtZOw1CtENI3w"),
     REDIS_END("redis_end", "Redis应用设计", "https://mp.weixin.qq.com/s/pgYBiG7UyPIe2qX5fWWYfA"),

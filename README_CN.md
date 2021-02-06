@@ -117,38 +117,38 @@ Hadoop长这样:
 5. 二维码, 支持将url生成二维码图片, 示例:
    - 帝八哥@=@https://github.com/caofanCPU
    - 关键字及功能
-      - @=@ ---> 形式: key=url
-      - help ---> 帮助文档
-      - thread_pool ---> 线程池
-      - thread_basic ---> 线程的基本认知
-      - thread_interview ---> 线程高频面试
-      - thread_lock_aqs ---> 并发JUC元祖AQS
-      - thread_lock_cas ---> 并发JUC-CAS
-      - thread_lock_container ---> 并发JUC-容器
-      - thread_lock_synchronized ---> 并发JUC-Synchronized
-      - java_interview ---> Java预热面试
-      - jvm_interview ---> JVM高频面试
-      - jvm_interview ---> JVM原理
-      - jvm_end_map ---> JVM原理高清大图
-      - mysql_interview ---> MySQL高频面试
-      - mysql ---> MySQL基础图
-      - mysql_explain ---> MySQL执行计划
-      - mysql_end ---> MySQL终极原理图
-      - redis_end ---> Redis高频面试
-      - redis_basic ---> Redis基础
-      - redis_cluster ---> Redis集群
-      - redis_end ---> Redis应用设计
-      - kafka ---> Kafka原理
-      - rabbit_mq ---> RabbitMQ原理
-      - hbase ---> HBase超然旅行
-      - hadoop ---> Hadoop俯视图
-      - flink ---> Flink真经
-      - zookeeper ---> 掀开Zookeeper面纱
-      - bg_protocol ---> 浅析大数据协议
-      - file ---> 揭秘读取文件内幕
-      - io_reuse ---> 起底IO多路复用
-      - io_ram_pool ---> 聊聊OS内存池技术
-      - spring ---> Spring老生常谈
+       - **@=@** ---> 形式: key=url
+       - **help** ---> 帮助文档
+       - **thread_pool** ---> 线程池
+       - **thread_basic** ---> 线程的基本认知
+       - **thread_interview** ---> 线程高频面试
+       - **thread_lock_aqs** ---> 并发JUC元祖AQS
+       - **thread_lock_cas** ---> 并发JUC-CAS
+       - **thread_lock_container** ---> 并发JUC-容器
+       - **thread_lock_synchronized** ---> 并发JUC-Synchronized
+       - **java_interview** ---> Java预热面试
+       - **jvm_interview** ---> JVM高频面试
+       - **jvm_interview** ---> JVM原理
+       - **jvm_end_map** ---> JVM原理高清大图
+       - **mysql_interview** ---> MySQL高频面试
+       - **mysql** ---> MySQL基础图
+       - **mysql_explain** ---> MySQL执行计划
+       - **mysql_end** ---> MySQL终极原理图
+       - **redis_interview** ---> Redis高频面试
+       - **redis_basic** ---> Redis基础
+       - **redis_cluster** ---> Redis集群
+       - **redis_end** ---> Redis应用设计
+       - **kafka** ---> Kafka原理
+       - **rabbit_mq** ---> RabbitMQ原理
+       - **hbase** ---> HBase超然旅行
+       - **hadoop** ---> Hadoop俯视图
+       - **flink** ---> Flink真经
+       - **zookeeper** ---> 掀开Zookeeper面纱
+       - **bg_protocol** ---> 浅析大数据协议
+       - **file** ---> 揭秘读取文件内幕
+       - **io_reuse** ---> 起底IO多路复用
+       - **io_ram_pool** ---> 聊聊OS内存池技术
+       - **spring** ---> Spring老生常谈
 
 >以上默认快捷键针对MacOS系统, 对于Windows用户将`cmd`看做`ctrl`即可
 
