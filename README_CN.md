@@ -71,13 +71,49 @@
     - 对于非SQL格式的文本, 不会做任何修改
 
 4. 代码彩蛋, 空白文本输入关键字, 然后按下快捷键`alt` + `shift` + `cmd` + `N`:
-    - NASA模板(多行文本批处理)
-        - 任意空文本, 输入`NASA`(可忽略大小写), 你会得到NASA操作手册
-        - 按照NASA手册提示, 自定义配置并输入需要处理的多行文本, 然后你会得到处理结果
-    - 正则表达式模板
-        - 任意空文本, `REGEX`(可忽略大小写), 你会得到骚气的正则表达式处理技巧
-    - Shell命令与函数技巧, 一个命令触发脚本, 多出来的时间用来聊天喝茶不香吗?
-        - 任意空文本, `OHMYZSH`(可忽略大小写), 你会得到骚气的shell命令与函数
+   - NASA模板(多行文本批处理)
+      - 任意空文本, 输入`NASA`(可忽略大小写), 你会得到NASA操作手册
+      - 按照NASA手册提示, 自定义配置并输入需要处理的多行文本, 然后你会得到处理结果
+   - 正则表达式模板
+      - 任意空文本, `REGEX`(可忽略大小写), 你会得到骚气的正则表达式处理技巧
+   - Shell命令与函数技巧, 一个命令触发脚本, 多出来的时间用来聊天喝茶不香吗?
+      - 任意空文本, `OHMYZSH`(可忽略大小写), 你会得到骚气的shell命令与函数
+
+5. 二维码, 支持将url生成二维码图片, 示例:
+   - 帝八哥@=@https://github.com/caofanCPU
+   - 关键字及功能
+      - @=@ ---> 形式: key=url
+      - help ---> 帮助文档
+      - thread_pool ---> 线程池
+      - thread_basic ---> 线程的基本认知
+      - thread_interview ---> 线程高频面试
+      - thread_lock_aqs ---> 并发JUC元祖AQS
+      - thread_lock_cas ---> 并发JUC-CAS
+      - thread_lock_container ---> 并发JUC-容器
+      - thread_lock_synchronized ---> 并发JUC-Synchronized
+      - java_interview ---> Java预热面试
+      - jvm_interview ---> JVM高频面试
+      - jvm_interview ---> JVM原理
+      - jvm_end_map ---> JVM原理高清大图
+      - mysql_interview ---> MySQL高频面试
+      - mysql ---> MySQL基础图
+      - mysql_explain ---> MySQL执行计划
+      - mysql_end ---> MySQL终极原理图
+      - redis_end ---> Redis高频面试
+      - redis_basic ---> Redis基础
+      - redis_cluster ---> Redis集群
+      - redis_end ---> Redis应用设计
+      - kafka ---> Kafka原理
+      - rabbit_mq ---> RabbitMQ原理
+      - hbase ---> HBase超然旅行
+      - hadoop ---> Hadoop俯视图
+      - flink ---> Flink真经
+      - zookeeper ---> 掀开Zookeeper面纱
+      - bg_protocol ---> 浅析大数据协议
+      - file ---> 揭秘读取文件内幕
+      - io_reuse ---> 起底IO多路复用
+      - io_ram_pool ---> 聊聊OS内存池技术
+      - spring ---> Spring老生常谈
 
 >以上默认快捷键针对MacOS系统, 对于Windows用户将`cmd`看做`ctrl`即可
 

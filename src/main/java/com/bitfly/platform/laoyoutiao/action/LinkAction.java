@@ -45,6 +45,9 @@ public class LinkAction extends AnAction {
                 showHelp = true;
             }
         }
+        if (StringUtils.equalsIgnoreCase(sectionText, LinkUrlEnum.HELP.getTopic())) {
+            showHelp = true;
+        }
         if (showHelp) {
             WriteCommandAction.runWriteCommandAction(currentProject, () -> currentDocument.setText(LinkUrlEnum.loadHelpInfo()));
             return;
