@@ -46,6 +46,10 @@
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl J"/>
             </action>
 
+            <action id="D8GER-QRCodeLink" class="com.bitfly.platform.laoyoutiao.action.LinkAction" text="QRCode::Link" description="QRCode::Link" icon="/icons/Link.png">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl K"/>
+            </action>
+
             <action id="D8GER-GraphEasy" class="com.bitfly.platform.laoyoutiao.action.GraphEasyAction" text="Graph::Easy" description="Graph::Easy" icon="/icons/XFinger.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl T"/>
             </action>
@@ -130,6 +134,18 @@
         </ul>
         <li>中文</li>
         <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!</li>
+        <li><h1>2.5</h1></li>
+        <ul>
+        <li>新增: QRCode::Link生成二维码, 'cmd' + 'alt' + 'shift' + 'K'<br>
+        <ul>
+        <li>基础语法: '@=@'为生成二维码的关键分割符号<br></li>
+        <li>示例: 空白文本中输入, 帝八哥@=@https://github.com/caofanCPU<br></li>
+        <li>将生成访问作者的二维码(用于手机扫码)和浏览器跳转的'帝八哥'<br></li>
+        <li>更多功能, 空白文本中输入'help', 将获取更过关键字, 其中包含大量高质量技术文章和技术大佬, 等你来发掘!<br></li>
+        <li>话不多说, <a href="http://file.debuggerpowerzcy.top/power/QRCode.gif">上图</a><br></li>
+        </ul>
+        </li>
+        </ul>
         <li><h1>2.4</h1></li>
         <ul>
         <li>优化: Graph::Easy保留用户输入原始语句, 再生成图形化文本代码注释, 方便后续调整, 'cmd' + 'alt' + 'shift' + 'T'<br>
