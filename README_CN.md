@@ -161,15 +161,52 @@ Hadoop长这样:
 >以上默认快捷键针对MacOS系统, 对于Windows用户将`cmd`看做`ctrl`即可
 
 ### 如何安装
+
 - `Preference` --> `Plugins` --> `Marketplace` --> type `LaoYouTiao` --> install
-- [IDEA官方插件库安装](https://plugins.jetbrains.com/plugin/15255-laoyoutiao)  
-- 源码安装, 这需要你熟悉Gradle, 后期我会详细补充如何使用Gradle开发一个插件  
+- [IDEA官方插件库安装](https://plugins.jetbrains.com/plugin/15255-laoyoutiao)
+- 源码安装, 这需要你熟悉Gradle, 后期我会详细补充如何使用Gradle开发一个插件
 
 ### Bug&问题
+
 [暂无, 等你来提](https://github.com/caofanCPU/D8gerAutoCode/issues)
 
 ### 版本演进历史
-觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!
+
+觉得LaoYouTiao不错的,请给个🌟, [插件地址](https://plugins.jetbrains.com/plugin/15255-laoyoutiao), 感谢老铁!
+
+- 2.5
+    - 新增: QRCode::Link生成二维码, 'cmd' + 'alt' + 'shift' + 'K'
+        - 基础语法: '@=@'为生成二维码的关键分割符号
+        - 示例: 空白文本中输入, 帝八哥@=@https://github.com/caofanCPU/LaoYouTiao
+        - 将生成访问作者的二维码(用于手机扫码)和浏览器跳转的'帝八哥'
+        - 更多功能, 空白文本中输入'help', 将获取更过关键字, 其中包含大量高质量技术文章和技术大佬, 等你来发掘!
+        - 话不多说, [上图](http://file.debuggerpowerzcy.top/power/HERE.gif)
+- 2.4
+    - 优化: Graph::Easy保留用户输入原始语句, 再生成图形化文本代码注释, 方便后续调整, 'cmd' + 'alt' + 'shift' + 'T'
+        - 基础语法: '.'为元素关键符号
+        - 示例: A.文本.B 其含义为'A'节点指向'B'节点, 箭头上的注释为'文本'
+        - 注意: 文本强烈建议使用英文, 中文由于编码问题会导致图形无法对齐
+        - 话不多说, [上图](http://file.debuggerpowerzcy.top/power/HERE.gif)
+- 2.3
+    - 新增: Graph::Easy现在全力支持一键生成图形化文本代码注释, 'cmd' + 'alt' + 'shift' + 'T'
+        - 基础语法: '.'为元素关键符号
+        - 示例: A.文本.B 其含义为'A'节点指向'B'节点, 箭头上的注释为'文本'
+        - 注意: 文本强烈建议使用英文, 中文由于编码问题会导致图形无法对齐
+        - 话不多说, [上图](http://file.debuggerpowerzcy.top/power/HERE.gif)
+- 2.2 更新: 重做图标([试一试?](https://github.com/caofanCPU/ImageMagick))
+- 2.1
+    - 修复: Beautiful::JSON在美化时支持'null'字段
+    - RoadMap参见[DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8)
+- 2.0
+    - 新增[Graph::Easy](http://debuggerpowerzcy.top/home/2020/04/25/MacOS%E8%BD%AF%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/)语法简化支持, 默认快捷键`alt` + `shift` + `cmd` + `T`
+    - 菜单工具栏调整
+        - D8ger重命名为ByteCry
+        - BeautifulJSON重命名为Beautiful::JSON
+        - 新增Graph::Easy
+        - CamelUnderlineConvert重命名为Camel::Underline
+        - SimplifyOneLine重命名为Simplify::OneLine
+        - BeautifulMySQL重命名为Beautiful::MySQL
+        - D8gerNote重命名为Byte::NoDance
 - 1.1
     - 自从'今日油条'被'今日头条'起诉侵权后, 本人夙兴夜寐, 久不得眠
     - 连隔壁王家的撕葱都要一口吞的好油条, 怎么就被干趴了呢?

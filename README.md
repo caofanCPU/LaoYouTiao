@@ -94,8 +94,7 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
 [No one util now, but wait for you](https://github.com/caofanCPU/D8gerAutoCode/issues)
 
 ### VersionRoadHistory
-If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!
-
+If you like LaoYouTiao, please 🌟 [the source project](https://github.com/caofanCPU/LaoYouTiao) and [download plugin](https://plugins.jetbrains.com/plugin/15255-laoyoutiao) for supporting me, thanks!
 - 2.5
     - Add: QRCode::Link for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'
         - Basic grammar: '@=@' is the key symbol of grammar parsing
@@ -119,7 +118,7 @@ If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYou
     - BugFix: Beautiful::JSON now support 'null' field for reserving origin text
     - About [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8)
 - 2.0
-    - Add: Support <a href="http://debuggerpowerzcy.top/home/2020/04/25/MacOS%E8%BD%AF%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/">Graph::Easy</a> for easier DSL, default shortcut is `alt` + `shift` + `cmd` + `T` <br> </li>
+    - Add: Support [Graph::Easy](http://debuggerpowerzcy.top/home/2020/04/25/MacOS%E8%BD%AF%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/) for easier DSL, default shortcut is `alt` + `shift` + `cmd` + `T`
     - Adjust tool menus
     - D8ger renamed to ByteCry
     - BeautifulJSON renamed to Beautiful::JSON
