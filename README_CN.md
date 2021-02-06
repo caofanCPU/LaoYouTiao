@@ -58,20 +58,28 @@
 其中二维码用于微信扫描, 二维码正下方的文字用于跳转浏览器打开  
 在工作中, 某些敏感文章(例如面试)就使用微信扫描在移动端查看(摸鱼), 其他的则在WEB端学习研究(光明正大摸鱼)
 
-- kafka - thread_lock_aqs - hbase - hadoop 在技术大佬[SoWhat1412](https://github.com/SoWhat1412)的视角里,  
-  Kafka长这样:
+- kafka
+- thread_lock_aqs
+- hbase
+- hadoop
 
+在技术大佬[SoWhat1412](https://github.com/SoWhat1412)的视角里
+
+Kafka长这样:
 <div align="center">
     <img src="http://file.debuggerpowerzcy.top/power/KAFKA-1.png" /> 
 </div>
+
 JUC并发-锁长这样:
 <div align="center">
     <img src="http://file.debuggerpowerzcy.top/power/AQS-1.png" /> 
 </div>
+
 HBase长这样:
 <div align="center">
     <img src="http://file.debuggerpowerzcy.top/power/HBASE-1.png" /> 
 </div>
+
 Hadoop长这样:
 <div align="center">
     <img src="http://file.debuggerpowerzcy.top/power/HADOOP-1.png" /> 
