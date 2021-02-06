@@ -44,17 +44,41 @@
 - 驼峰-下划线-大写-首字母小写-小写, 时间戳与标准时间字符串(香!), 一键转换, 默认快捷键`alt` + `shift` + `cmd` + `U`  
 - JSON格式化与单行文本转换, 默认快捷键 `alt`+`shift`+`cmd`+`J` | `S`
 - MySQL格式化, 默认快捷键 `alt`+`shift`+`cmd`+`J` | `B`
-- 预留彩蛋, 在IDEA中编辑空白文件输入`nasa`即可得到NASA模板, 针对多行字符串批量处理, 尤其是SQL字段命名处理   
+- 预留彩蛋, 在IDEA中编辑空白文件输入`nasa`即可得到NASA模板, 针对多行字符串批量处理, 尤其是SQL字段命名处理
 - 预留彩蛋, 在IDEA中编辑空白文件输入`regex`即可得到一些常用的有趣正则表达式, 后期会增加其他代码彩蛋
 - 预留彩蛋, 在IDEA中编辑空白文件输入`ohmyzsh`即可得到常用Shell命令及函数
 - QRCode, 将url转二维码, 此外, 还可以根据关键字定位优质技术文章链接(言简意赅而不失深度, 图文并茂且浑然一体)
     - kafka
     - thread_lock_aqs
-    - thread_lock_cas
     - hbase
     - hadoop
+    - 以上文章与以下图片均来自技术大佬[SoWhat1412](https://github.com/SoWhat1412)
+
+在技术大佬[SoWhat1412](https://github.com/SoWhat1412)的视角里,  
+Kafka长这样:
+<div align="center">
+    <img src="http://file.debuggerpowerzcy.top/power/KAFKA.png" /> 
+</div>
+JUC并发-锁长这样:
+<div align="center">
+    <img src="http://file.debuggerpowerzcy.top/power/AQS.png" /> 
+</div>
+HBase长这样:
+<div align="center">
+    <img src="http://file.debuggerpowerzcy.top/power/HBASE.png" /> 
+</div>
+Hadoop长这样:
+<div align="center">
+    <img src="http://file.debuggerpowerzcy.top/power/HADOOP.png" /> 
+</div>
+
+当然, 大佬[SoWhat1412](https://github.com/SoWhat1412)的公众号长这样:
+<div align="center">
+    <img src="http://file.debuggerpowerzcy.top/power/SoWhat1412.png" /> 
+</div>
 
 ### 使用手册
+
 1. JSON美化与空白字符简化:
     - 任意文件选中指定文本字符串, 按下快捷键`alt` + `shift` + `cmd` + `J`, 即可完成格式化
     - 选中文本, 按下快捷键`alt` + `shift` + `cmd` + `S`, 即可剔除空白字符: 换行符、制表符、空格
