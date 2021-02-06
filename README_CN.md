@@ -74,7 +74,7 @@ Hadoop长这样:
 
 当然, 大佬[SoWhat1412](https://github.com/SoWhat1412)的公众号长这样:
 <div align="center">
-    <img src="http://file.debuggerpowerzcy.top/power/SoWhat1412.png" /> 
+    <img src="http://file.debuggerpowerzcy.top/power/SoWhat1412.png"  style="max-width: 30%"/> 
 </div>
 
 ### 使用手册
