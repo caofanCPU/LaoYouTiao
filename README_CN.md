@@ -35,27 +35,32 @@
 - 个性化问题只提供示例解法
 
 ### 设计初衷
+
 - 移除开发中的固定的重复编码过程, 提升开发效率
 - 提供可用的代码模板, 基本不用修改就可使用的代码
 - 支持代码目录配置, 一键自动生成代码, 仅需自行导包即可完成智能编程
 - 支持用户自定义配置, 可指定需要生成的文件
 
 ### 功能特性
-- 驼峰-下划线-大写-首字母小写-小写, 时间戳与标准时间字符串(香!), 一键转换, 默认快捷键`alt` + `shift` + `cmd` + `U`  
+
+- 驼峰-下划线-大写-首字母小写-小写, 时间戳与标准时间字符串(香!), 一键转换, 默认快捷键`alt` + `shift` + `cmd` + `U`
 - JSON格式化与单行文本转换, 默认快捷键 `alt`+`shift`+`cmd`+`J` | `S`
 - MySQL格式化, 默认快捷键 `alt`+`shift`+`cmd`+`J` | `B`
 - 预留彩蛋, 在IDEA中编辑空白文件输入`nasa`即可得到NASA模板, 针对多行字符串批量处理, 尤其是SQL字段命名处理
 - 预留彩蛋, 在IDEA中编辑空白文件输入`regex`即可得到一些常用的有趣正则表达式, 后期会增加其他代码彩蛋
 - 预留彩蛋, 在IDEA中编辑空白文件输入`ohmyzsh`即可得到常用Shell命令及函数
-- QRCode, 将url转二维码, 此外, 还可以根据关键字定位优质技术文章链接(言简意赅而不失深度, 图文并茂且浑然一体)
-    - kafka
-    - thread_lock_aqs
-    - hbase
-    - hadoop
-    - 以上文章与以下图片均来自技术大佬[SoWhat1412](https://github.com/SoWhat1412)
+- QRCode, 将url转二维码, 此外, 还可以根据关键字定位优质技术文章链接(言简意赅而不失深度, 图文并茂且浑然一体), 默认快捷键`alt` + `shift` + `cmd` + `K`
 
-在技术大佬[SoWhat1412](https://github.com/SoWhat1412)的视角里,  
-Kafka长这样:
+#### QRCode高质量链接技术文章示例
+
+**转载说明: 以下图片均来自技术大佬[SoWhat1412](https://github.com/SoWhat1412)**
+当你在空白文本输入如下关键字, 然后`alt` + `shift` + `cmd` + `K`, 你将看到一个弹出窗口  
+其中二维码用于微信扫描, 二维码正下方的文字用于跳转浏览器打开  
+在工作中, 某些敏感文章(例如面试)就使用微信扫描在移动端查看(摸鱼), 其他的则在WEB端学习研究(光明正大摸鱼)
+
+- kafka - thread_lock_aqs - hbase - hadoop 在技术大佬[SoWhat1412](https://github.com/SoWhat1412)的视角里,  
+  Kafka长这样:
+
 <div align="center">
     <img src="http://file.debuggerpowerzcy.top/power/KAFKA-1.png" /> 
 </div>
