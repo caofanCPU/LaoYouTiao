@@ -16,10 +16,10 @@
 </div>
 
 ## 说明
-最新版本为**2.4**, 在 _**`12月25号`**_ 已提交, 待官方审核  
-如果无法获取, [戳此](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.4) 下载~~.zip~~压缩包  
+最新版本为**2.5**, 在 _**`02月07号`**_ 已提交, 待官方审核  
+如果无法获取, [戳此](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.5) 下载~~.zip~~压缩包  
 如果用的不错, 给我点个🌟呗, thx!  
-下个开发版本将遵循[DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).
+本版本已遵循[DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).
 
 ### 序言
 正如JetBrains所说, 我相信你在繁忙编码工作中时应该善用工具以节省宝贵的时间。
@@ -47,6 +47,12 @@
 - 预留彩蛋, 在IDEA中编辑空白文件输入`nasa`即可得到NASA模板, 针对多行字符串批量处理, 尤其是SQL字段命名处理   
 - 预留彩蛋, 在IDEA中编辑空白文件输入`regex`即可得到一些常用的有趣正则表达式, 后期会增加其他代码彩蛋
 - 预留彩蛋, 在IDEA中编辑空白文件输入`ohmyzsh`即可得到常用Shell命令及函数
+- QRCode, 将url转二维码, 此外, 还可以根据关键字定位优质技术文章链接(言简意赅而不失深度, 图文并茂且浑然一体)
+    - kafka
+    - thread_lock_aqs
+    - thread_lock_cas
+    - hbase
+    - hadoop
 
 ### 使用手册
 1. JSON美化与空白字符简化:

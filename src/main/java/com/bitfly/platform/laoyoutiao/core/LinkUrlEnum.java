@@ -6,8 +6,8 @@ package com.bitfly.platform.laoyoutiao.core;
  * @author D8GER
  */
 public enum LinkUrlEnum {
-    QR_CODE("@=@", "形式: key=url", "https://github.com/caofanCPU"),
-    HELP("help", "帮助文档", "https://github.com/caofanCPU"),
+    QR_CODE("@=@", "形式: key=url", "https://github.com/caofanCPU/LaoYouTiao"),
+    HELP("help", "帮助文档", "https://github.com/caofanCPU/LaoYouTiao"),
 
     THREAD_POOL("thread_pool", "线程池", "https://mp.weixin.qq.com/s/dTMH1TdxiCKy5yotQ7u7cA"),
     THREAD_BASIC("thread_basic", "线程的基本认知", "https://mp.weixin.qq.com/s/p0c6DCTcuA7bXtSFDYDoPQ"),

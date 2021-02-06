@@ -79,6 +79,17 @@
     <change-notes>
         <![CDATA[
         <li>If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!</li>
+        <li><h1>2.5</h1></li>
+        <ul>
+        <li>Add: QRCode::Link for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'<br>
+        <ul>
+        <li>Basic grammar: '@=@' is the key symbol of grammar parsing<br></li>
+        <li>For example: D8GER@=@https://github.com/caofanCPU/LaoYouTiao<br></li>
+        <li>And you'll see a window showing QRCode with the link: https://github.com/caofanCPU/LaoYouTiao<br></li>
+        <li>Talk seems cheap, <a href="http://file.debuggerpowerzcy.top/power/QRCode.gif">so show you a gif</a><br></li>
+        </ul>
+        </li>
+        </ul>
         <li><h1>2.4</h1></li>
         <ul>
         <li>Optimize: Graph::Easy will keep the user's original sentence, and then generate graphical text code comments, which is convenient for subsequent adjustments, 'cmd' + 'alt' + 'shift' + 'T'<br>
@@ -139,7 +150,7 @@
         <li>新增: QRCode::Link生成二维码, 'cmd' + 'alt' + 'shift' + 'K'<br>
         <ul>
         <li>基础语法: '@=@'为生成二维码的关键分割符号<br></li>
-        <li>示例: 空白文本中输入, 帝八哥@=@https://github.com/caofanCPU<br></li>
+        <li>示例: 空白文本中输入, 帝八哥@=@https://github.com/caofanCPU/LaoYouTiao<br></li>
         <li>将生成访问作者的二维码(用于手机扫码)和浏览器跳转的'帝八哥'<br></li>
         <li>更多功能, 空白文本中输入'help', 将获取更过关键字, 其中包含大量高质量技术文章和技术大佬, 等你来发掘!<br></li>
         <li>话不多说, <a href="http://file.debuggerpowerzcy.top/power/QRCode.gif">上图</a><br></li>
