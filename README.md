@@ -96,13 +96,28 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
 ### VersionRoadHistory
 If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!
 
-- 1.1
-    - Camel-Underline-Uppercase-Uncapitalize-Lowercase can be converted to each other by shortcut `alt` + `shift` + `cmd` + `U`, even timestamp-datetime convert
-    - JSON formatting and single line text conversion, supporting section and whole document, default shortcut `alt`+`shift`+`cmd`+`J` | `S`
-    - MySQL formatting, supporting section and whole document, default shortcut `alt`+`shift`+`cmd`+`J` | `B`
-    - Reserve easter eggs, edit the blank file in IDEA and enter `nasa` to get the NASA configuration file template. This is very useful and efficient for handling multi-lines, especially SQL field naming processing.
-    - Reserve easter eggs, edit the blank file in IDEA and enter `regex` to get some commonly used regular expressions. Other code Easter eggs will be added later.
-    - Reserve easter eggs, you can try to edit the blank file in IDEA and type `ohmyzsh` to get some useful shell commands and functions
+- 2.5
+    - Add: QRCode::Link for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'
+        - Basic grammar: '@=@' is the key symbol of grammar parsing
+        - For example: D8GER@=@https://github.com/caofanCPU/LaoYouTiao
+        - Then you'll see a window showing QRCode with the link: https://github.com/caofanCPU/LaoYouTiao
+        - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/QRCode.gif)
+- 2.4
+    - Optimize: Graph::Easy will keep the user's original sentence, and then generate graphical text code comments, which is convenient for subsequent adjustments, 'cmd' + 'alt' + 'shift' + 'T'
+    - Update: Graph::Easy now fully supports one-click generation of graphical text code comments, 'cmd' + 'alt' + 'shift' + 'T'
+        - Basic grammar: '.' is the key symbol of grammar parsing
+        - For example: A.some text.B means that node 'A' points node 'B' and the comment upper the arrow is 'some text'
+        - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/HERE.gif)
+- 2.3
+    - Update: Graph::Easy now fully supports one-click generation of graphical text code comments, 'cmd' + 'alt' + 'shift' + 'T'
+        - Basic grammar: '.' is the key symbol of grammar parsing
+        - For example: A.some text.B means that node 'A' points node 'B' and the comment upper the arrow is 'some text'
+        - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/HERE.gif)
+- 2.2
+    - Update: Redo icon([Have a try?](https://github.com/caofanCPU/ImageMagick))<br>
+- 2.1
+    - BugFix: Beautiful::JSON now support 'null' field for reserving origin text
+    - About [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8)
 - 2.0
     - Add: Support <a href="http://debuggerpowerzcy.top/home/2020/04/25/MacOS%E8%BD%AF%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/">Graph::Easy</a> for easier DSL, default shortcut is `alt` + `shift` + `cmd` + `T` <br> </li>
     - Adjust tool menus
@@ -114,28 +129,13 @@ If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYou
     - BeautifulMySQL renamed to Beautiful::MySQL
     - D8gerNote renamed to Byte::NoDance
     - About [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8)
-- 2.1
-    - BugFix: Beautiful::JSON now support 'null' field for reserving origin text
-    - About [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8)
-- 2.2
-    - Update: Redo icon([Have a try?](https://github.com/caofanCPU/ImageMagick))<br>
-- 2.3
-    - Update: Graph::Easy now fully supports one-click generation of graphical text code comments, 'cmd' + 'alt' + 'shift' + 'T'
-        - Basic grammar: '.' is the key symbol of grammar parsing
-        - For example: A.some text.B means that node 'A' points node 'B' and the comment upper the arrow is 'some text'
-        - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/HERE.gif)
-- 2.4
-    - Optimize: Graph::Easy will keep the user's original sentence, and then generate graphical text code comments, which is convenient for subsequent adjustments, 'cmd' + 'alt' + 'shift' + 'T'
-    - Update: Graph::Easy now fully supports one-click generation of graphical text code comments, 'cmd' + 'alt' + 'shift' + 'T'
-        - Basic grammar: '.' is the key symbol of grammar parsing
-        - For example: A.some text.B means that node 'A' points node 'B' and the comment upper the arrow is 'some text'
-        - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/HERE.gif)
-- 2.5
-    - Add: QRCode::Link for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'
-        - Basic grammar: '@=@' is the key symbol of grammar parsing
-        - For example: D8GER@=@https://github.com/caofanCPU/LaoYouTiao
-        - Then you'll see a window showing QRCode with the link: https://github.com/caofanCPU/LaoYouTiao
-        - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/QRCode.gif)
+- 1.1
+    - Camel-Underline-Uppercase-Uncapitalize-Lowercase can be converted to each other by shortcut `alt` + `shift` + `cmd` + `U`, even timestamp-datetime convert
+    - JSON formatting and single line text conversion, supporting section and whole document, default shortcut `alt`+`shift`+`cmd`+`J` | `S`
+    - MySQL formatting, supporting section and whole document, default shortcut `alt`+`shift`+`cmd`+`J` | `B`
+    - Reserve easter eggs, edit the blank file in IDEA and enter `nasa` to get the NASA configuration file template. This is very useful and efficient for handling multi-lines, especially SQL field naming processing.
+    - Reserve easter eggs, edit the blank file in IDEA and enter `regex` to get some commonly used regular expressions. Other code Easter eggs will be added later.
+    - Reserve easter eggs, you can try to edit the blank file in IDEA and type `ohmyzsh` to get some useful shell commands and functions
 
 ### Contribute
 - Please give me a 🌟
