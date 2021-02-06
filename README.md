@@ -70,13 +70,18 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
     - For text in non-SQL format, no changes will be made
 
 4. Easter egg:
-    - Regex template
-        - Choose any blank file, Type `regex` and click on `Tools`-> `D8ger`-> `D8gerMore`, and you will find some surprise
-    - NASA template for easter egg:
-        - Choose any blank file, Type `nasa` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the NASA manual
-        - Follow the manual, custom your config and write your own multi-lines need to be batch handled, then you will find some surprise
-    - Shell commands and functions, Type `ohmyzsh` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the surprise
+   - Regex template
+      - Choose any blank file, Type `regex` and click on `Tools`-> `D8ger`-> `D8gerMore`, and you will find some surprise
+   - NASA template for easter egg:
+      - Choose any blank file, Type `nasa` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the NASA manual
+      - Follow the manual, custom your config and write your own multi-lines need to be batch handled, then you will find some surprise
+   - Shell commands and functions, Type `ohmyzsh` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the surprise
 
+5. QRCode for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'
+   - Basic grammar: '@=@' is the key symbol of grammar parsing
+   - For example: **D8GER**@=@**https://github.com/caofanCPU/LaoYouTiao**
+   - Then you'll see a window showing [QRCode](https://github.com/caofanCPU/LaoYouTiao)
+   - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/QRCode.gif)
 
 > By the way, these default shortcuts used in Mac OS, if you use Windows just take `cmd` into `ctrl`.
 

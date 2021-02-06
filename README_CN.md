@@ -123,7 +123,7 @@ Hadoop长这样:
       - 任意空文本, `OHMYZSH`(可忽略大小写), 你会得到骚气的shell命令与函数
 
 5. 二维码, 支持将url生成二维码图片, 示例:
-   - 帝八哥@=@https://github.com/caofanCPU
+   - 帝八哥**@=@**https://github.com/caofanCPU
    - 关键字及功能
        - **@=@** ---> 形式: key=url
        - **help** ---> 帮助文档
