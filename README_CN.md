@@ -53,7 +53,10 @@
 
 #### QRCode高质量链接技术文章示例
 
-**转载说明: 以下图片均来自技术大佬[SoWhat1412](https://github.com/SoWhat1412)**  
+**转载说明**
+> 以下图片均来自技术大佬[SoWhat1412](https://github.com/SoWhat1412)  
+> 已征求原作者同意
+
 当你在空白文本输入如下关键字, 然后`alt` + `shift` + `cmd` + `K`, 你将看到一个弹出窗口  
 其中二维码用于微信扫描, 二维码正下方的文字用于跳转浏览器打开  
 在工作中, 某些敏感文章(例如面试)就使用微信扫描在移动端查看(摸鱼), 其他的则在WEB端学习研究(光明正大摸鱼)
@@ -80,7 +83,7 @@ HBase长这样:
     <img src="http://file.debuggerpowerzcy.top/power/HBASE-1.png" /> 
 </div>
 
-Hadoop长这样:
+Hadoop生态圈长这样:
 <div align="center">
     <img src="http://file.debuggerpowerzcy.top/power/HADOOP-1.png" /> 
 </div>
