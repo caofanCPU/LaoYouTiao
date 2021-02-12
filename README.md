@@ -17,7 +17,7 @@
 > [中文说明](./README_CN.md)
 
 ## Attention
-The latest version is **2.5** which is submitted and under the official approval on 7th, February.   
+The latest version is **2.5** which is approved by JetBrains on 10th, February.   
 If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.5) to download ~~.zip~~ file.  
 By the way, I hope you use happy and give me a 🌟, thx!  
 NEXT Developing plan is [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).

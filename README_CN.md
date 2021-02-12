@@ -16,7 +16,7 @@
 </div>
 
 ## 说明
-最新版本为**2.5**, 在 _**`02月07号`**_ 已提交, 待官方审核  
+最新版本为**2.5**, 在 _**`02月10号`**_ 已通过官方审核  
 如果无法获取, [戳此](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.5) 下载~~.zip~~压缩包  
 如果用的不错, 给我点个🌟呗, thx!  
 本版本已遵循[DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).
@@ -183,7 +183,7 @@ Hadoop生态圈长这样:
         - 示例: 空白文本中输入, 帝八哥@=@https://github.com/caofanCPU/LaoYouTiao
         - 将生成访问作者的二维码(用于手机扫码)和浏览器跳转的'帝八哥'
         - 更多功能, 空白文本中输入'help', 将获取更过关键字, 其中包含大量高质量技术文章和技术大佬, 等你来发掘!
-        - 话不多说, [上图](http://file.debuggerpowerzcy.top/power/HERE.gif)
+        - 话不多说, [上图](http://file.debuggerpowerzcy.top/power/QRCode.gif)
 - 2.4
     - 优化: Graph::Easy保留用户输入原始语句, 再生成图形化文本代码注释, 方便后续调整, 'cmd' + 'alt' + 'shift' + 'T'
         - 基础语法: '.'为元素关键符号
