@@ -17,8 +17,8 @@
 > [中文说明](./README_CN.md)
 
 ## Attention
-The latest version is **2.5** which is approved by JetBrains on 10th, February.   
-If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.5) to download ~~.zip~~ file.  
+The latest version is **2.6** which is submitted and under the official approval on 10th, March.   
+If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.6) to download ~~.zip~~ file.  
 By the way, I hope you use happy and give me a 🌟, thx!  
 NEXT Developing plan is [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).
 
@@ -73,28 +73,49 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
    - Regex template
       - Choose any blank file, Type `regex` and click on `Tools`-> `D8ger`-> `D8gerMore`, and you will find some surprise
    - NASA template for easter egg:
-      - Choose any blank file, Type `nasa` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the NASA manual
-      - Follow the manual, custom your config and write your own multi-lines need to be batch handled, then you will find some surprise
+       - Choose any blank file, Type `nasa` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the NASA manual
+       - Follow the manual, custom your config and write your own multi-lines need to be batch handled, then you will find some surprise
    - Shell commands and functions, Type `ohmyzsh` and click on` Tools`-> `D8ger`-> `D8gerMore`, and you will get the surprise
 
 5. QRCode for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'
-   - Basic grammar: '@=@' is the key symbol of grammar parsing
-   - For example: **D8GER**@=@**https://github.com/caofanCPU/LaoYouTiao**
-   - Then you'll see a window showing [QRCode](https://github.com/caofanCPU/LaoYouTiao)
-   - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/QRCode.gif)
+    - Basic grammar: '@=@' is the key symbol of grammar parsing
+    - For example: **D8GER**@=@**https://github.com/caofanCPU/LaoYouTiao**
+    - Then you'll see a window showing [QRCode](https://github.com/caofanCPU/LaoYouTiao)
+    - Talk seems cheap, so show you a [gif](http://file.debuggerpowerzcy.top/power/QRCode.gif)
+
+6. Time::Calculate for time estimating
+    - For example 1: +10Y9M8d7h6m54s321, means the current time should execute: +10years+9months+8days+7hours+6minutes+54seconds+321milliseconds
+    - For example 2: -34h67m89s999999, means the current time should execute: -34hours-67minutes-89seconds-999999milliseconds
+    - For example 3: -5s1Y321000, means the current time should execute:-1year-5seconds-321000milliseconds Talk seems cheap, [gif](http://file.debuggerpowerzcy.top/power/Timer.gif)
 
 > By the way, these default shortcuts used in Mac OS, if you use Windows just take `cmd` into `ctrl`.
 
 ### How to install
+
 - `Preference` --> `Plugins` --> `Marketplace` --> type `LaoYouTiao` --> install
-- [IDEA official plugin library installation](https://plugins.jetbrains.com/plugin/15255-laoyoutiao)  
+- [IDEA official plugin library installation](https://plugins.jetbrains.com/plugin/15255-laoyoutiao)
 - As for `Source installation` requires you're familiar with Gradle, I will add more details about how to develop a plugin by ***Gradle*** later
 
 ### Bug & Question
+
 [No one util now, but wait for you](https://github.com/caofanCPU/D8gerAutoCode/issues)
 
 ### VersionRoadHistory
 If you like LaoYouTiao, please 🌟 [the source project](https://github.com/caofanCPU/LaoYouTiao) and [download plugin](https://plugins.jetbrains.com/plugin/15255-laoyoutiao) for supporting me, thanks!
+
+- 2.6
+    - Add: Time::Calculate for time estimate, 'cmd' + 'alt' + 'shift' + 'H', one of the scenarios is to easily calculate when the Redis cache is written, and the accuracy is supported to the ms level
+    - My expectation: It is not easy to insists on open source about 8 versions, but there are only a few 🌟 for this project, so I ask for your help: [Give me a star](https://github.com/caofanCPU/LaoYouTiao) 🌟, and share it with more friends about the funny from one-click!<br>
+        - Basic grammar 1: '+' for estimating the future time, the current time will add the input data when calculating; '-'(default: non '+' nor '-') for estimating the past time, the current time will subtract the input data when calculating
+        - Basic grammar 2: Time unit definition: 'Y'=Year, 'M'=Month, 'd'=day, 'h'=hour, 'm'=minute, 's'=second, millisecond(default) with no time unit mark
+        - Basic grammar 3: Support any combination of time units, which is no order between 'YMdhms'(but I recommended maintain order), besides, it doesn't need to appear all the time utils, just use what you need
+        - For example 1: +10Y9M8d7h6m54s321, means the current time should execute: +10years+9months+8days+7hours+6minutes+54seconds+321milliseconds
+        - For example 2: -34h67m89s999999, means the current time should execute: -34hours-67minutes-89seconds-999999milliseconds
+        - For example 3: -5s1Y321000, means the current time should execute:-1year-5seconds-321000milliseconds
+        - Attention 1: The millisecond data must be put to the end if you need it
+        - Attention 2: The parsing rules limit the first input of the same time unit as a valid value, and the later data input will be ignored, for example: '2d3m4d5d9m' will only be parsed as '2d3m'
+        - Talk seems cheap, [gif](http://file.debuggerpowerzcy.top/power/Timer.gif)
+
 - 2.5
     - Add: QRCode::Link for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'
         - Basic grammar: '@=@' is the key symbol of grammar parsing

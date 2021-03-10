@@ -22,6 +22,8 @@ public class VerbalExpressionUtil {
      */
     public static final Pattern HUMP_TO_UNDERLINE = Pattern.compile("[A-Z]");
 
+    public static final Pattern TIME_CALCULATE = Pattern.compile("(^((?:[+\\-])?))(?:([\\dYMdhms])+)");
+
     /**
      * No '_' or '-' and begin with [A-Z] regex, it will trigger to execute CamelToUnderline when regex detect is true
      */

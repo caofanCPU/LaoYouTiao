@@ -16,8 +16,8 @@
 </div>
 
 ## 说明
-最新版本为**2.5**, 在 _**`02月10号`**_ 已通过官方审核  
-如果无法获取, [戳此](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.5) 下载~~.zip~~压缩包  
+最新版本为**2.6**, 在 _**`03月10号`**_ 已提交, 待官方审核  
+如果无法获取, [戳此](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.6) 下载~~.zip~~压缩包  
 如果用的不错, 给我点个🌟呗, thx!  
 本版本已遵循[DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).
 
@@ -150,16 +150,20 @@ Hadoop生态圈长这样:
        - **redis_cluster** ---> Redis集群
        - **redis_end** ---> Redis应用设计
        - **kafka** ---> Kafka原理
-       - **rabbit_mq** ---> RabbitMQ原理
-       - **hbase** ---> HBase超然旅行
-       - **hadoop** ---> Hadoop俯视图
-       - **flink** ---> Flink真经
-       - **zookeeper** ---> 掀开Zookeeper面纱
-       - **bg_protocol** ---> 浅析大数据协议
-       - **file** ---> 揭秘读取文件内幕
-       - **io_reuse** ---> 起底IO多路复用
-       - **io_ram_pool** ---> 聊聊OS内存池技术
-       - **spring** ---> Spring老生常谈
+     - **rabbit_mq** ---> RabbitMQ原理
+     - **hbase** ---> HBase超然旅行
+     - **hadoop** ---> Hadoop俯视图
+     - **flink** ---> Flink真经
+     - **zookeeper** ---> 掀开Zookeeper面纱
+     - **bg_protocol** ---> 浅析大数据协议
+     - **file** ---> 揭秘读取文件内幕
+     - **io_reuse** ---> 起底IO多路复用
+     - **io_ram_pool** ---> 聊聊OS内存池技术
+     - **spring** ---> Spring老生常谈
+6. 时间推演, 推算Redis缓存数据插入时间变成一键了:
+    - 示例1: +10Y9M8d7h6m54s321, 代表当前时间加上10年9月8天7小时6分钟54秒321毫秒
+    - 示例2: -34h67m89s999999, 代表当前时间减去34小时67分钟89秒999999毫秒
+    - 示例3: -5s1Y321000, 代表当前时间减去1年5秒321000毫秒
 
 >以上默认快捷键针对MacOS系统, 对于Windows用户将`cmd`看做`ctrl`即可
 
@@ -177,6 +181,18 @@ Hadoop生态圈长这样:
 
 觉得LaoYouTiao不错的,请给个🌟, [插件地址](https://plugins.jetbrains.com/plugin/15255-laoyoutiao), 感谢老铁!
 
+- 2.6
+    - 新增: Time::Calculate时间推算功能, 'cmd' + 'alt' + 'shift' + 'H', 其中场景之一是方便推算Redis缓存是什么时刻写入的, 精度支持到ms级别
+    - 本人期望: 本项目坚持开源8个版本了, 实属不易, 而项目才几个🌟, 请老铁们为[项目](https://github.com/caofanCPU/LaoYouTiao) 打🌟并分享给更多的朋友, 让他们也爽一爽'一键'
+        - 基础语法1: '+'是推算未来时间, 计算时会用当前时间加上输入数据; '-'(默认: 同时没有'+'或'-')是推算过去时间, 计算会用当前时间减去输入数据
+        - 基础语法2: 时间单位定义: 'Y'=Year, 'M'=Month, 'd'=day, 'h'=hour, 'm'=minute, 's'=second, millisecond(默认) 不需要时间单位标识
+        - 基础语法3: 支持时间单位任意组合, 即YMdhms之间是没有顺序的(但是建议顺序), 此外也不需要都出现
+        - 示例1: +10Y9M8d7h6m54s321, 代表当前时间加上10年9月8天7小时6分钟54秒321毫秒
+        - 示例2: -34h67m89s999999, 代表当前时间减去34小时67分钟89秒999999毫秒
+        - 示例3: -5s1Y321000, 代表当前时间减去1年5秒321000毫秒
+        - 注意1: 如果你需要计算毫秒数据, 请最后输入毫秒数据
+        - 注意2: 解析规则限定同一个时间单位先输入的为有效值, 后输入的会被忽略, 例如: '2d3m4d5d9m'结果只会是'2d3m'
+        - 话不多说, [上图](http://file.debuggerpowerzcy.top/power/Timer.gif)
 - 2.5
     - 新增: QRCode::Link生成二维码, 'cmd' + 'alt' + 'shift' + 'K'
         - 基础语法: '@=@'为生成二维码的关键分割符号

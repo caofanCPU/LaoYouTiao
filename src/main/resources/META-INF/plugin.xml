@@ -6,9 +6,9 @@
     <description>
         <![CDATA[LaoYouTiao is a multifunctional integrated plugin which is designed to remove repetitive activities at daily work.
         <p>
-        JSON format, MySQL format, camel-underline convert, normal linux commands and wonderful regex!<br>
+        JSON format, MySQL format, Time estimate, camel-underline convert, normal linux commands and wonderful regex!<br>
         老油条是一款JetBrains全平台产品的多功能整合插件, 旨在去除日常工作中的重复活动. <br>
-        JSON美化|MySQL美化, 字符串批处理, Linux命令工具, 正则表达式奇淫巧技. <br>
+        JSON美化|MySQL美化|时间推算, 字符串批处理, Linux命令工具, 正则表达式奇淫巧技. <br>
         <ul>
             <li><a href="https://github.com/caofanCPU/LaoYouTiao">项目|Project</a><br></li>
             <li><a href="http://www.debuggerpowerzcy.top/home/2020/03/14/D8gerAutoCode%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">博客指南|Blog guide</a><br></li>
@@ -41,6 +41,9 @@
             <separator/>
 
             <!-- Add your actions here -->
+            <action id="D8GER-TimeEstimate" class="com.bitfly.platform.laoyoutiao.action.TimeEstimateAction" text="Time::Estimate" description="Time::Estimate" icon="/icons/Timer.png">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl H"/>
+            </action>
 
             <action id="D8GER-BeautifulJSON" class="com.bitfly.platform.laoyoutiao.action.BeautifulJSONAction" text="Beautiful::JSON" description="Beautiful::JSON" icon="/icons/JetBeFaker.png">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift ctrl J"/>
@@ -79,6 +82,23 @@
     <change-notes>
         <![CDATA[
         <li>If you like LaoYouTiao, please star <a href="https://github.com/caofanCPU/LaoYouTiao">the source project</a> for supporting me, thanks!</li>
+        <li><h1>2.6</h1></li>
+        <ul>
+        <li>Add: Time::Estimate for time estimate, 'cmd' + 'alt' + 'shift' + 'H', one of the scenarios is to easily calculate when the Redis cache is written, and the accuracy is supported to the ms level<br>
+        <li>My expectation: It is not easy to insists on open source about 8 versions, but there are only a few 🌟 for this project, so I ask for your help: <a href="https://github.com/caofanCPU/LaoYouTiao">Give me a star</a>🌟, and share it with more friends about the funny from one-click!<br>
+        <ul>
+        <li>Basic grammar 1: '+' for estimating the future time, the current time will add the input data when calculating; '-'(default: non '+' nor '-') for estimating the past time, the current time will subtract the input data when calculating<br></li>
+        <li>Basic grammar 2: Time unit definition: 'Y'=Year, 'M'=Month, 'd'=day, 'h'=hour, 'm'=minute, 's'=second, millisecond(default) with no time unit mark<br></li>
+        <li>Basic grammar 3: Support any combination of time units, which is no order between 'YMdhms'(but I recommended maintain order), besides, it doesn't need to appear all the time utils, just use what you need<br></li>
+        <li>For example 1: +10Y9M8d7h6m54s321, means the current time should execute: +10years+9months+8days+7hours+6minutes+54seconds+321milliseconds<br></li>
+        <li>For example 2: -34h67m89s999999, means the current time should execute: -34hours-67minutes-89seconds-999999milliseconds<br></li>
+        <li>For example 3: -5s1Y321000, means the current time should execute:-1year-5seconds-321000milliseconds<br></li>
+        <li>Attention 1: The millisecond data must be put to the end if you need it<br></li>
+        <li>Attention 2: The parsing rules limit the first input of the same time unit as a valid value, and the later data input will be ignored, for example: '2d3m4d5d9m' will only be parsed as '2d3m'<br></li>
+        <li>Talk seems cheap, <a href="http://file.debuggerpowerzcy.top/power/Timer.gif">so show you a gif</a><br></li>
+        </ul>
+        </li>
+        </ul>
         <li><h1>2.5</h1></li>
         <ul>
         <li>Add: QRCode::Link for creating QRCode, 'cmd' + 'alt' + 'shift' + 'K'<br>
@@ -145,6 +165,23 @@
         </ul>
         <li>中文</li>
         <li>觉得LaoYouTiao不错的,请给个🌟 <a href="https://github.com/caofanCPU/LaoYouTiao">插件地址</a>, 感谢老铁!</li>
+        <li><h1>2.6</h1></li>
+        <ul>
+        <li>新增: Time::Calculate时间推算功能, 'cmd' + 'alt' + 'shift' + 'H', 其中场景之一是方便推算Redis缓存是什么时刻写入的, 精度支持到ms级别<br>
+        <li>本人期望: 本项目坚持开源8个版本了, 实属不易, 而项目才几个🌟, 请老铁们为<a href="https://github.com/caofanCPU/LaoYouTiao">项目</a>打🌟并分享给更多的朋友, 让他们也爽一爽'一键'<br>
+        <ul>
+        <li>基础语法1: '+'是推算未来时间, 计算时会用当前时间加上输入数据; '-'(默认: 同时没有'+'或'-')是推算过去时间, 计算会用当前时间减去输入数据<br></li>
+        <li>基础语法2: 时间单位定义: 'Y'=Year, 'M'=Month, 'd'=day, 'h'=hour, 'm'=minute, 's'=second, millisecond(默认) 不需要时间单位标识<br></li>
+        <li>基础语法3: 支持时间单位任意组合, 即YMdhms之间是没有顺序的(但是建议顺序), 此外也不需要都出现<br></li>
+        <li>示例1: +10Y9M8d7h6m54s321, 代表当前时间加上10年9月8天7小时6分钟54秒321毫秒<br></li>
+        <li>示例2: -34h67m89s999999, 代表当前时间减去34小时67分钟89秒999999毫秒<br></li>
+        <li>示例3: -5s1Y321000, 代表当前时间减去1年5秒321000毫秒<br></li>
+        <li>注意1: 如果你需要计算毫秒数据, 请最后输入毫秒数据<br></li>
+        <li>注意2: 解析规则限定同一个时间单位先输入的为有效值, 后输入的会被忽略, 例如: '2d3m4d5d9m'结果只会是'2d3m'<br></li>
+        <li>话不多说, <a href="http://file.debuggerpowerzcy.top/power/Timer.gif">上图</a><br></li>
+        </ul>
+        </li>
+        </ul>
         <li><h1>2.5</h1></li>
         <ul>
         <li>新增: QRCode::Link生成二维码, 'cmd' + 'alt' + 'shift' + 'K'<br>

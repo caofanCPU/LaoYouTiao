@@ -80,6 +80,18 @@ public class DateUtil {
         return localDateTime.format(DateTimeFormatter.ofPattern(DATETIME_FORMAT_DETAIL_DOT));
     }
 
+    public static Long now() {
+        return getMilliseconds(LocalDateTime.now());
+    }
+
+    public static Long getMilliseconds(@NonNull LocalDateTime dateTime) {
+        return dateTime.toInstant(DEFAULT_ZONE_OFFSET).toEpochMilli();
+    }
+
+    public static String viewNow() {
+        return enhanceToLocalDateTime(now());
+    }
+
     /**
      * String of date and time, convert to String: milliseconds
      * for example:
@@ -98,7 +110,7 @@ public class DateUtil {
             return dateTimeStr;
         }
         String originWord = dateTimeStr.replaceAll(DATE_TIME_REGEX.pattern(), ConstantUtil.SPACE);
-        LocalDateTime parse = null;
+        LocalDateTime parse;
         try {
             parse = LocalDateTime.parse(originWord, DateTimeFormatter.ofPattern(DATETIME_FORMAT_SIMPLE));
         } catch (Exception e) {
