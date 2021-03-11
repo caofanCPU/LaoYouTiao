@@ -12,7 +12,7 @@
 
 ## IDEA代码插件•`Common版本`
 <div align="center">
-    <img src="http://file.debuggerpowerzcy.top/power/LaoYouTiao-V2.png" /> 
+    <img src="http://file.debuggerpowerzcy.top/power/LaoYouTiao-V3.png" /> 
 </div>
 
 ## 说明
