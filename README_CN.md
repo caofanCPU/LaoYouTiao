@@ -100,6 +100,7 @@ Hadoop生态圈长这样:
     - 选中文本, 按下快捷键`alt` + `shift` + `cmd` + `S`, 即可剔除空白字符: 换行符、制表符、空格
     - 如果不选中文本, 直接按下快捷键`alt` + `shift` + `cmd` + `J` 或('S'), 则会对当前文件全部文本内容进行处理
     - 对于非JSON格式的文本, 不会做任何修改
+    - 支持JSONString直接转换为JSON Object
 
 2. 驼峰-下划线-大写-首字母小写-小写, 一键循环转换
     - 选中任意编辑状态下文件里的单词, 按下快捷键`alt` + `shift` + `cmd` + `U`, 你会发现选中单词转换了
@@ -180,6 +181,10 @@ Hadoop生态圈长这样:
 ### 版本演进历史
 
 觉得LaoYouTiao不错的,请给个🌟, [插件地址](https://plugins.jetbrains.com/plugin/15255-laoyoutiao), 感谢老铁!
+
+- 3.4
+    - 新增: JSONGroovy::Enhance 支持JSON字符串转为JSON对象, 'cmd' + 'alt' + 'shift' + 'I'
+    - 修复: Camel::Underline('cmd' + 'alt' + 'shift' + 'U') 驼峰转换现在支持'-'和'_'分隔
 
 - 2.6
     - 新增: Time::Calculate时间推算功能, 'cmd' + 'alt' + 'shift' + 'H', 其中场景之一是方便推算Redis缓存是什么时刻写入的, 精度支持到ms级别
