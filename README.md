@@ -53,6 +53,7 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
     - Select the specified text string in any file, press `alt` + `shift` + `cmd` + `S`, then remove blank characters: line breaks, tabs, spaces
     - If nothing is being select, the whole file content will be handled with shortcut `alt` + `shift` + `cmd` + `J`(or 'S')
     - For text in non-JSON format, no changes will be made
+    - A egg is hidden for converting JSONString into JSON Object
 
 2. Camel-Underline-Uppercase-Uncapitalize-Lowercase circle convert by one-click
     - Choose word text in any editing file, press `alt` + `shift` + `cmd` + `U`, you`ll find the changed word
@@ -102,6 +103,10 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
 
 ### VersionRoadHistory
 If you like LaoYouTiao, please 🌟 [the source project](https://github.com/caofanCPU/LaoYouTiao) and [download plugin](https://plugins.jetbrains.com/plugin/15255-laoyoutiao) for supporting me, thanks!
+
+- 3.4
+    - Add: JSONGroovy::Enhance supports convert JSONString to JSON Object(include JSONObject and JSONArray), 'cmd' + 'alt' + 'shift' + 'I'
+    - BugFix: Camel::Underline('cmd' + 'alt' + 'shift' + 'U') now supports '-' and '_'
 
 - 2.6
     - Add: Time::Calculate for time estimate, 'cmd' + 'alt' + 'shift' + 'H', one of the scenarios is to easily calculate when the Redis cache is written, and the accuracy is supported to the ms level
