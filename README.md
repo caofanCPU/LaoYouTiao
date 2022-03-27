@@ -17,8 +17,8 @@
 > [中文说明](./README_CN.md)
 
 ## Attention
-The latest version is **2.6** which is submitted and under the official approval on 10th, March.   
-If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/2.6) to download ~~.zip~~ file.  
+The latest version is **4.0** which is submitted and under the official approval on 27th, March.   
+If you can't fetch it, then [click here](https://github.com/caofanCPU/LaoYouTiao/releases/tag/4.0) to download ~~.zip~~ file.  
 By the way, I hope you use happy and give me a 🌟, thx!  
 NEXT Developing plan is [DSP(D8ger Series Plan)](https://www.processon.com/view/5f96a5f35653bb06ef1870e8).
 
@@ -89,6 +89,9 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
     - For example 2: -34h67m89s999999, means the current time should execute: -34hours-67minutes-89seconds-999999milliseconds
     - For example 3: -5s1Y321000, means the current time should execute:-1year-5seconds-321000milliseconds Talk seems cheap, [gif](http://file.debuggerpowerzcy.top/power/Timer.gif)
 
+7. Enhanced JSON formatting, remove JSON escape characters, as an enhanced supplement to JSON formatting, let you say goodbye to annoying escape characters
+    - select the specified text string in any file, press the shortcut key `alt` + `shift` + `cmd ` + `I` to remove escape characters
+
 > By the way, these default shortcuts used in Mac OS, if you use Windows just take `cmd` into `ctrl`.
 
 ### How to install
@@ -103,6 +106,9 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
 
 ### VersionRoadHistory
 If you like LaoYouTiao, please 🌟 [the source project](https://github.com/caofanCPU/LaoYouTiao) and [download plugin](https://plugins.jetbrains.com/plugin/15255-laoyoutiao) for supporting me, thanks!
+
+- 4.0
+    - BugFix: JSONGroovy::Enhance('cmd' + 'alt' + 'shift' + 'I') , now can capable of more complex JSON data scenarios
 
 - 3.4
     - Add: JSONGroovy::Enhance supports convert JSONString to JSON Object(include JSONObject and JSONArray), 'cmd' + 'alt' + 'shift' + 'I'
