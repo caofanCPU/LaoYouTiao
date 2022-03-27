@@ -182,6 +182,13 @@ Hadoop生态圈长这样:
 
 觉得LaoYouTiao不错的,请给个🌟, [插件地址](https://plugins.jetbrains.com/plugin/15255-laoyoutiao), 感谢老铁!
 
+- 4.0(里程碑版本)
+    - 本次版本增加中国区域的[「字节跳动内推」福利链接](https://bytedance.feishu.cn/docx/doxcnXREso6pznDttWehPFIBieh), 没错, 我为各位优秀小伙伴带来大厂机会, 并且准备了很优质的招聘信息资源。你可以在JetBrains开发软件随时找到该福利链接, 因为只需要一个快捷键, 具体参考下文
+    - 新增:
+        - QRCode::Link 新增bytedance「字节跳动内推」关键词, 在任意空白文本输入'bytedance', 按下快捷键'cmd' + 'alt' + 'shift' + 'I', 即可得到[「字节跳动内推」链接的二维码及链接](https://bytedance.feishu.cn/docx/doxcnXREso6pznDttWehPFIBieh), 我已在改链接为你准备很多优质的信息, 你会不虚此行的
+    - 变更: Byte::NoDance默认跳转链接变更为[「字节跳动内推」福利链接](https://bytedance.feishu.cn/docx/doxcnXREso6pznDttWehPFIBieh), 在任意空的文本界面, 按下'cmd' + 'alt' + 'shift' + 'N', 即可得到「字节跳动内推」链接的二维码及链接, 我已在改链接为你准备很多优质的信息, 你会不虚此行的
+    - 修复: JSONGroovy::Enhance('cmd' + 'alt' + 'shift' + 'I') 格式化BUG修复, 现在能胜任更多的复杂JSON数据场景
+
 - 3.4
     - 新增: JSONGroovy::Enhance 支持JSON字符串转为JSON对象, 'cmd' + 'alt' + 'shift' + 'I'
     - 修复: Camel::Underline('cmd' + 'alt' + 'shift' + 'U') 驼峰转换现在支持'-'和'_'分隔
