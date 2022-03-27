@@ -95,6 +95,9 @@ Well, that's a valid question for my drive to find the repeat parts at daily wor
 > By the way, these default shortcuts used in Mac OS, if you use Windows just take `cmd` into `ctrl`.
 
 ### How to install
+<a href="https://plugins.jetbrains.com/plugin/15255-laoyoutiao" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/YiiGuxing/TranslationPlugin@master/images/button-install.png" alt="Get from Marketplace" title="Get from Marketplace">
+</a>
 
 - `Preference` --> `Plugins` --> `Marketplace` --> type `LaoYouTiao` --> install
 - [IDEA official plugin library installation](https://plugins.jetbrains.com/plugin/15255-laoyoutiao)
