@@ -199,7 +199,7 @@ If you like LaoYouTiao, please 🌟 [the source project](https://github.com/caof
 </table>
 
 ### Thanks
-<a href="https://www.jetbrains.com/idea">
-    <img src="http://file.debuggerpowerzcy.top/power/jetbrains-variant-4.svg" style="width: 40px;"><br>
+<a href="https://www.jetbrains.com/?from=LaoYouTiao">
+    <img border="0" src="http://file.debuggerpowerzcy.top/power/jetbrains-variant-4.svg" width="131" alt="JetBrains"><br>
     <sub>With JetBrains team's open source certificate supporting, this project will continue to develop in the spirit of open source</sub>
 </a>
