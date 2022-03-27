@@ -280,7 +280,7 @@ Hadoop生态圈长这样:
 
 ### 致谢
 
-<a href="https://www.jetbrains.com/idea">
-    <img src="http://file.debuggerpowerzcy.top/power/jetbrains-variant-4.svg" style="width: 40px;"><br>
+<a href="https://www.jetbrains.com/?from=LaoYouTiao">
+    <img border="0" src="http://file.debuggerpowerzcy.top/power/jetbrains-variant-4.svg" width="131" alt="JetBrains"><br>
     <sub>感谢JetBrains团队的开源证书支持, 本项目将秉承开源精神持续开发</sub>
 </a>
